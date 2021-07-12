@@ -1,0 +1,288 @@
+@media (max-width: 767px)
+
+    .suptitle
+        text-align: left !important
+
+    .title
+        text-align: left !important
+        font-size: 36px !important
+        line-height: 42px !important
+
+    .subtitle
+        text-align: left !important
+
+    .hamburger
+        display: block
+
+    .header__burger-menu
+        display: none
+        position: absolute
+        width: 100%
+        left: 0
+        z-index: 11
+        height: 100%
+        overflow: hidden
+        overflow-y: hidden
+        top: 0
+        bottom: 0
+        right: 0
+        background: #262A4E
+        padding: 90px 30px
+        .header__link
+            display: block
+            & + .header__link
+                margin-left: 0
+                margin-top: 50px
+        .header__search
+            margin-left: 0
+            margin-top: 50px
+
+    .header
+        border-bottom: 1px solid $white
+        &__inner
+            padding: 20px 0
+        &__block
+            &:first-child
+                width: 92%
+                justify-content: space-between
+        &__logo
+            img
+                width: 60%
+        &__navbar__lang
+            // display: none
+            margin-left: 0
+            span
+                display: none
+            img
+                margin-right: 5px
+
+    .main__inner__dropdown
+        left: auto
+        right: 0
+
+    .main
+        background-image: url('../img/main-bg.png')
+        height: auto
+        padding-bottom: 80px
+        background-position: top left
+        min-height: 100vh
+        &__inner
+            margin-top: 20px
+            height: auto
+            min-height: calc( 100vh - 70px )
+            align-items: center
+        &__suptitle
+            font-size: 12px
+            line-height: 24px
+            text-align: center
+        &__subtitle
+            width: 85%
+            font-size: 13px
+            line-height: 24px
+            text-align: center
+            margin-bottom: 40px
+        &__title
+            font-size: 48px
+        .button
+            padding: 14px 40px
+        &__socials
+            left: 0
+
+    .bitcoin
+        &__inner
+            flex-wrap: wrap
+        &__block
+            width: 100%
+        .bitcoin__block:first-child
+            padding: 100px 0 50px 0
+        .suptitle
+            margin-bottom: 10px
+            font-size: 32px
+            line-height: normal
+        .subtitle
+            width: 100%
+            margin-bottom: 40px
+
+    .box
+        margin-top: 40px
+        width: 100%
+        flex-direction: column
+        &__descr
+            font-size: 12px
+        &-1
+            width: 100%
+            margin-right: 15px
+            text-align: center
+            display: flex
+            justify-content: center
+            align-items: center
+            border-right: none
+            margin-bottom: 10px
+        &__name
+            margin-right: 10px
+        &-2
+            width: 100%
+            text-align: center
+
+    .form
+        width: 100%
+        flex-wrap: wrap
+        &__wrap
+            width: 100%
+        .input
+            width: 100% !important
+            border-radius: 0
+        .button
+            width: 100%
+            padding: 17px
+            border-radius: 0
+
+    .about
+        background-position: left 100%
+        padding-bottom: 130px !important
+        &__inner
+            align-items: flex-start
+            .title,.subtitle
+                width: 100%
+        &__items
+            flex-wrap: wrap
+        &__item
+            width: 100%
+            & + .about__item
+                margin-top: 50px
+
+    .price
+        padding-bottom: 160px
+        &__items
+            flex-wrap: wrap
+        &__item
+            width: 100%
+            & + .price__item
+                margin-top: 40px
+        &__header
+            flex-wrap: wrap
+            justify-content: center
+            margin-bottom: 30px
+        &__period
+            margin-top: 30px
+
+    .technology
+        padding-top: 160px
+        &__inner
+            flex-wrap: wrap
+        &__block
+            width: 100% !important
+        &__item
+            width: 100%
+        &__img
+            margin-top: 40px
+            img
+                width: 100%
+                height: 250px
+                object-fit: cover
+                object-position: center
+                border-radius: 20px
+                & + img
+                    margin-top: 25px
+
+    .footer
+        &__inner
+            .title, .subtitle
+                width: 100% !important
+
+@media (min-width: 768px) and (max-width: 991px)
+    .form
+        &__wrap
+            width: 50%
+
+    .title
+        font-size: 40px !important
+        line-height: 40px
+
+    .header
+        &__inner
+            display: none
+
+    .box
+        width: 80%
+
+    .main
+        &__inner
+            align-items: center
+        &__subtitle
+            width: 80%
+
+    .about
+        &__inner
+            .title, .subtitle
+                width: 80%
+        &__items
+            justify-content: space-between
+        &__item
+            width: 31.5%
+        &__item-title
+            text-align: center
+            min-height: 33px
+
+    .price
+        &__items
+            flex-wrap: wrap
+        &__item
+            width: 48%
+            margin-bottom: 4%
+
+    .technology
+        &__inner
+            flex-direction: column
+        &__block
+            width: 100% !important
+        &__items
+            display: flex
+            justify-content: space-between
+        &__item
+            width: 48%
+            & + .technology__item
+                margin-top: 0
+            &-img
+                margin-right: 20px
+            &-descr
+                p
+                    min-height: 56px
+        &__img
+            margin-top: 40px
+
+    .footer
+        &__inner
+            .title, .subtitle
+                width: 80% !important
+@media (min-width: 992px) and (max-width: 1199px)
+    .main
+        &__inner
+            margin-left: 5%
+
+@media (max-width: 767px)
+    .bitcoin
+        height: auto
+        padding-bottom: 60px
+        &__items
+            overflow-y: auto
+            overflow-x: scroll
+            height: auto
+        &__item
+            width: 68vw
+        &__left, &__right
+            width: auto
+            display: flex
+        &__left
+            margin-top: 0
+            margin-right: 0
+        &__item
+            margin-right: 20px
+
+@media (min-width: 768px) and (max-width: 992px)
+    .bitcoin
+        &__items
+            display: block
+        &__right, &__left
+            width: 100%
+            margin-top: 0
