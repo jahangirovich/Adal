@@ -1,0 +1,101 @@
+.call-popup, .language-popup, .language-popup2, .account-popup
+    position: absolute
+    width: 280px
+    z-index: 15
+    background: $white
+    top: 70px
+    box-shadow: 0px 36px 49px rgba(0, 0, 0, 0.03), 0px 10.8529px 14.7721px rgba(0, 0, 0, 0.0195477), 0px 4.50776px 6.13556px rgba(0, 0, 0, 0.015), 0px 1.63037px 2.21911px rgba(0, 0, 0, 0.0104523)
+    border-radius: 5px
+
+.call-popup, .account-popup
+    padding: 24px 20px 20px 20px
+    right: 16%
+    .subtitle
+        color: $black !important
+        margin-top: 0 !important
+        font-size: 18px !important
+    .socials
+        margin-top: 24px
+        display: flex
+        justify-content: space-between
+    .social
+        width: 23%
+        img
+            width: 100%
+    .contacts
+        margin-top: 28px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        a
+            color: $black !important
+        span
+            display: block
+            font-size: 12px
+            color: $grey
+    .button
+        margin-top: 20px
+        font-size: 16px !important
+        width: 100% !important
+        height: auto !important
+        padding: 12px
+
+.language-popup, .language-popup2
+    overflow: hidden
+    &__link
+        display: block
+        padding: 11px 20px
+        color: $black
+        font-size: 16px
+        font-weight: 400
+        &:hover
+            color: $black
+            background: $liteGrey
+            &::after
+                background-color: $liteGrey
+    &__link-selected
+        color: $orange !important
+        position: relative
+        &::after
+            content: url('../img/selected-orange.svg')
+            position: absolute
+            right: 20px
+            background-color: $white
+            width: 20px
+
+.language-popup
+    right: 10.5%
+
+.language-popup2
+    right: 5%
+    .language-popup__link
+        display: flex
+        justify-content: space-between
+        align-items: center
+        span
+            color: $grey
+            font-size: 10px
+            width: 20px
+
+.account-popup
+    right: 1%
+    &__safety
+        margin-top: 17px
+        margin-bottom: 25px
+        font-size: 13px
+        font-weight: 400
+        color: $grey
+        text-align: center
+        a
+            color: $orange !important
+    &__partners
+        margin: 0 -20px
+        border-top: 1px solid #EEEEF2
+        text-align: center
+        display: block
+        font-weight: 600
+        font-size: 14px
+        color: $grey
+        padding: 20px 20px 5px 20px
+        &:hover
+            color: $orange !important
