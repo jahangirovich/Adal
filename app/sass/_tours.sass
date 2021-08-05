@@ -70,6 +70,12 @@
                 transition: 0.3s
         & + .tours__filter
             margin-left: 10px
+    &__filter-active
+        background: $white !important
+        color: $black !important
+        svg
+            path
+                fill: black
     &__filter-icon
         svg
             margin-top: -2px
@@ -88,11 +94,103 @@
     &__card
         width: 23%
         margin-right: 2%
+        border-radius: 5px
+        overflow: hidden
         margin-bottom: 2%
+        z-index: 8
+        transition: 0.3s
+        cursor: pointer
+        &:hover
+            .tours__card-bottom
+                opacity: 1
     &__card-loading
         width: 100%
         img
             width: 100%
+    &__card-up
+        height: 230px
+        position: relative
+        overflow: hidden
+        width: 100%
+        z-index: 1
+        color: white
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        padding: 12px
+    &__card-up-img
+        position: absolute
+        width: 100%
+        height: 100%
+        object-fit: cover
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        z-index: -1
+    &__card-flex
+        z-index: 2
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__card-up-revenge
+        background: $white
+        color: $black
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12)
+        border-radius: 5px
+        padding: 3px 5px
+        font-size: 11px
+        font-weight: 500
+        text-transform: uppercase
+    &__card-up-star
+        display: flex
+        img
+            width: 14px
+            height: 14px
+            & + img
+                margin-left: 5px
+    &__card-up-descr
+        z-index: 2
+        p
+            margin-bottom: 3px
+            font-size: 14px
+            font-weight: 400
+        div
+            font-weight: 700
+            font-size: 20px
+    &__card-bottom
+        background: $white
+        backdrop-filter: blur(80px)
+        opacity: 0.8
+        transition: 0.3s
+        padding: 12px
+    &__card-cost
+        color: #FF7733
+        font-size: 20px
+        font-weight: 700
+    &__card-data
+        color: $greyText
+        font-size: 14px
+        font-weight: 500
+    &__card-favorite
+        img
+            width: 20px
+            height: 18px
+            margin-bottom: 4px
+    &__card-details
+        margin-top: 10px
+        margin-bottom: 10px
+        background: #F5F5F7
+        border: 1px solid #EEEEF2
+        box-sizing: border-box
+        border-radius: 12px
+        color: $greyText
+        font-size: 14px
+        font-weight: 500
+        padding: 1px 5px
+        img
+            width: 15px
+            margin-bottom: 2px
     &__not-fount
         width: 100%
         margin-top: 40px
