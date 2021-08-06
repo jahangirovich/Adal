@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.min.css" />
+        <link rel="stylesheet" href="./css/mytailwind.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <title>Pickhot</title>
+    </head>
+    <body>
+        <section class="burger-menu">
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="header__burger-close burger-show">
+                            <img src="img/burger-close.svg" alt="">
+                        </div>
+                        <div class="header__logo">
+                            <img src="img/logo.svg" alt="" />
+                        </div>
+                        <div class="header__wrap">
+                            <div class="header__call">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.57689 17.9998C4.36134 17.9998 5.46326 17.7162 7.11333 16.7945C9.11985 15.6695 10.6719 14.6308 12.6675 12.6408C14.5917 10.7182 15.528 9.47345 16.8385 7.08922C18.319 4.39722 18.0666 2.98614 17.7845 2.38305C17.4486 1.66224 16.9527 1.23112 16.3117 0.803208C15.9476 0.56472 15.5623 0.360281 15.1607 0.192487C15.1205 0.17521 15.0832 0.158736 15.0498 0.14387C14.8509 0.0542707 14.5495 -0.0811327 14.1677 0.0635119C13.9129 0.159138 13.6855 0.35481 13.3294 0.706377C12.5992 1.42639 11.6014 3.02993 11.2333 3.81744C10.9861 4.34821 10.8226 4.69857 10.8222 5.09152C10.8222 5.55157 11.0536 5.90635 11.3345 6.28926C11.3872 6.36118 11.4394 6.42988 11.4901 6.49658C11.7959 6.89837 11.863 7.01449 11.8188 7.22181C11.7292 7.63847 11.0609 8.8788 9.96257 9.97448C8.86427 11.0702 7.65947 11.6962 7.24112 11.7853C7.02492 11.8316 6.90637 11.7616 6.49164 11.445C6.43216 11.3996 6.37108 11.3526 6.30718 11.3056C5.87879 10.987 5.54042 10.7616 5.09113 10.7616H5.08872C4.6977 10.7616 4.36294 10.9311 3.80837 11.2108C3.085 11.5756 1.43293 12.5604 0.708357 13.2913C0.355919 13.6464 0.159407 13.8731 0.0633602 14.1274C-0.0813122 14.5103 0.0549202 14.8104 0.143734 15.0113C0.158604 15.0447 0.175079 15.0812 0.19236 15.1218C0.361515 15.5226 0.567202 15.907 0.806816 16.2701C1.234 16.909 1.66681 17.4036 2.38937 17.7399C2.76041 17.9154 3.16647 18.0042 3.57689 17.9998Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="header__languages">
+                                <div class="header__language">Рус</div>
+                                <div class="header__language">KZT</div>
+                            </div>
+                            <div class="header__account">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 11C12.7911 11 13.5645 10.7654 14.2223 10.3259C14.8801 9.88635 15.3928 9.26164 15.6955 8.53074C15.9983 7.79983 16.0775 6.99556 15.9231 6.21964C15.7688 5.44372 15.3878 4.73098 14.8284 4.17157C14.269 3.61216 13.5563 3.2312 12.7804 3.07686C12.0044 2.92252 11.2002 3.00173 10.4693 3.30448C9.73836 3.60723 9.11365 4.11992 8.67412 4.77772C8.2346 5.43552 8 6.20888 8 7C8 8.06087 8.42143 9.07828 9.17157 9.82843C9.92172 10.5786 10.9391 11 12 11Z" fill="white"/>
+                                    <path d="M18 21C18.2652 21 18.5196 20.8946 18.7071 20.7071C18.8946 20.5196 19 20.2652 19 20C19 18.1435 18.2625 16.363 16.9497 15.0503C15.637 13.7375 13.8565 13 12 13C10.1435 13 8.36301 13.7375 7.05025 15.0503C5.7375 16.363 5 18.1435 5 20C5 20.2652 5.10536 20.5196 5.29289 20.7071C5.48043 20.8946 5.73478 21 6 21H18Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="main__inner">
+                <div class="container">
+                    <div class="title">Конструктор туров</div>
+                    <div class="title">Горящие путевки</div>
+                    <div class="burger__items">
+                        <div class="burger__item">
+                            <a class="burger__link" href="">О компании</a>
+                            <a class="burger__link" href="">Контакты</a>
+                            <a class="burger__link" href="">Блог</a>
+                        </div>
+                        <div class="burger__item">
+                            <a class="burger__link" href="">Информация об оплате</a>
+                            <a class="burger__link" href="">Частозадаваемые вопросы</a>
+                            <a class="burger__link" href="">Пользовательское соглашение</a>
+                        </div>
+                        <div class="burger__item">
+                            <a class="burger__link" href="">Авторизоваться</a>
+                            <a class="burger__link" href="">Вход для партнеров</a>
+                            <a class="burger__link" href="">Стать партнером</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__inner">
+                        <div class="footer__item">
+                            <a class="footer__link" href="">Горящие туры</a>
+                            <img src="img/divider.svg" alt="">
+                            <a class="footer__link" href="">Конструктор туров</a>
+                        </div>
+                        <div class="footer__item">
+                            <a class="footer__link" href="">Стать партнером</a>
+                            <img src="img/divider.svg" alt="">
+                            <a class="footer__link" href="">О компании</a>
+                            <a class="footer__link" href="">Контакты</a>
+                            <a class="footer__link" href="">Блог</a>
+                            <img src="img/divider.svg" alt="">
+                            <a class="footer__link" href="#">TOO Pickhot © 2021</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+        <section class="main_generate">
+            <div class="main__container2 container">
+                <header class="header">
+                    <div class="header__inner">
+                        <div class="header__burger burger-show">
+                            <img src="img/burger.svg" alt="" />
+                        </div>
+                        <div class="header__logo">
+                            <img src="img/logo.svg" alt="" />
+                        </div>
+                        <div class="header__wrap">
+                                <div class="header__call">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.57689 17.9998C4.36134 17.9998 5.46326 17.7162 7.11333 16.7945C9.11985 15.6695 10.6719 14.6308 12.6675 12.6408C14.5917 10.7182 15.528 9.47345 16.8385 7.08922C18.319 4.39722 18.0666 2.98614 17.7845 2.38305C17.4486 1.66224 16.9527 1.23112 16.3117 0.803208C15.9476 0.56472 15.5623 0.360281 15.1607 0.192487C15.1205 0.17521 15.0832 0.158736 15.0498 0.14387C14.8509 0.0542707 14.5495 -0.0811327 14.1677 0.0635119C13.9129 0.159138 13.6855 0.35481 13.3294 0.706377C12.5992 1.42639 11.6014 3.02993 11.2333 3.81744C10.9861 4.34821 10.8226 4.69857 10.8222 5.09152C10.8222 5.55157 11.0536 5.90635 11.3345 6.28926C11.3872 6.36118 11.4394 6.42988 11.4901 6.49658C11.7959 6.89837 11.863 7.01449 11.8188 7.22181C11.7292 7.63847 11.0609 8.8788 9.96257 9.97448C8.86427 11.0702 7.65947 11.6962 7.24112 11.7853C7.02492 11.8316 6.90637 11.7616 6.49164 11.445C6.43216 11.3996 6.37108 11.3526 6.30718 11.3056C5.87879 10.987 5.54042 10.7616 5.09113 10.7616H5.08872C4.6977 10.7616 4.36294 10.9311 3.80837 11.2108C3.085 11.5756 1.43293 12.5604 0.708357 13.2913C0.355919 13.6464 0.159407 13.8731 0.0633602 14.1274C-0.0813122 14.5103 0.0549202 14.8104 0.143734 15.0113C0.158604 15.0447 0.175079 15.0812 0.19236 15.1218C0.361515 15.5226 0.567202 15.907 0.806816 16.2701C1.234 16.909 1.66681 17.4036 2.38937 17.7399C2.76041 17.9154 3.16647 18.0042 3.57689 17.9998Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="header__languages">
+                                    <div class="header__language">Рус</div>
+                                    <div class="header__language">KZT</div>
+                                </div>
+                                <div class="header__account">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 11C12.7911 11 13.5645 10.7654 14.2223 10.3259C14.8801 9.88635 15.3928 9.26164 15.6955 8.53074C15.9983 7.79983 16.0775 6.99556 15.9231 6.21964C15.7688 5.44372 15.3878 4.73098 14.8284 4.17157C14.269 3.61216 13.5563 3.2312 12.7804 3.07686C12.0044 2.92252 11.2002 3.00173 10.4693 3.30448C9.73836 3.60723 9.11365 4.11992 8.67412 4.77772C8.2346 5.43552 8 6.20888 8 7C8 8.06087 8.42143 9.07828 9.17157 9.82843C9.92172 10.5786 10.9391 11 12 11Z" fill="white"/>
+                                        <path d="M18 21C18.2652 21 18.5196 20.8946 18.7071 20.7071C18.8946 20.5196 19 20.2652 19 20C19 18.1435 18.2625 16.363 16.9497 15.0503C15.637 13.7375 13.8565 13 12 13C10.1435 13 8.36301 13.7375 7.05025 15.0503C5.7375 16.363 5 18.1435 5 20C5 20.2652 5.10536 20.5196 5.29289 20.7071C5.48043 20.8946 5.73478 21 6 21H18Z" fill="white"/>
+                                    </svg>
+                                </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="generate_inner">
+                    <div class="generate_header flex">
+                        
+                        <div class="generate_header_nav">
+                            <div class="flex">
+                                <div class="generate_header_back flex">
+                                    <div class="flex">
+                                        <img src="./img/generate_arrow.svg">
+                                        <a href="#">Назад</a>
+                                    </div>
+                                    <img src="./img/divider_g.svg">
+                                    <div class="generate_favourite">
+                                        <img src="./img/heart.svg">
+                                        <span>В избранное</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h1>Денпасар, Индонезия</h1>
+                        </div>
+
+                        <div class="generate_header_budget">
+                            <div class="inline-block">
+                                <div class="flex">
+                                    <img src="./img/g_check.svg">
+                                    <div>
+                                        <span>Бюджет на туриста</span>
+                                        <p><strong>189 412₸ из 200 000₸</strong></p>
+                                    </div>
+                                    <img src="./img/g_arrow.svg">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="generate_header_btn">
+                            <a href="#">Перейти к оплате</a>
+                        </div>
+
+                    </div>
+                    <div class="generate_content grid grid-flow-col grid-cols-2">
+
+                            <div style="margin-right: 10px;" class="generate_content_inner grid grid-flow-col grid-cols-1 grid-rows-3 gap-4">
+                                <div class="flex">
+                                    <div style="width: 50%;" class="generate_operator">
+                                        <div class="generate_operator_inner">
+                                            <div class="generate_operator_heading flex">
+                                                <img src="./img/earth.svg">
+                                                <div>
+                                                    <span>Туроператор</span>
+                                                    <p>Сгенерированный тур</p>
+                                                </div>
+                                            </div>
+                                            <h6>Вы можете модифицировать тур по своему желанию, так как он был собран Pickhot автоматически</h6>
+                                        
+                                            <a>cdssdcsdcssdcs</a>
+                                        </div>
+                                    </div>
+
+
+                                    <div style="width: 50%;" class="generate_rating">
+                                        <div class="generate_rating_inner">
+                                            <div class="generate_rating_heading flex">
+                                                <img src="./img/calendarB.svg">
+                                                <div>
+                                                    <span class="block">Рейтинг</span>
+                                                    <img src="./img/stars.svg">
+                                                </div>
+                                            </div>
+                                            <p>Даты тура</p>
+                                            <h6><strong>25 мар 2021 &#8594; 1 апр 2021</strong></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="generate_hotel">
+                                    <div class="generate_hotel_inner flex">
+                                        <img style="padding-top: 2px;" src="./img/hotel.svg">
+                                        <div>
+                                            <div class="generate_hotel_heading flex">
+                                                <img src="./img/bed.svg">
+                                                <div>
+                                                    <span>Отель</span>
+                                                    <p>Люкс 2-местный</p>
+                                                </div>
+                                            </div>
+                                            <div class="generate_hotel_rating"></div>
+                                            <div class="generate_hotel_stuff"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="margin-top: 20px;" class="flex">
+                                    <div style="width: 50%;" class="generate_stuff">
+                                        <div class="generate_stuff_inner">
+                                            <div class="generate_stuff_heading flex">   
+                                                <img src="./img/eat.svg">
+                                                <div>
+                                                    <span>Питание</span>
+                                                    <p>Обед и ужин</p>
+                                                </div>
+                                            </div>
+                                            <div class="generate_stuff_bottom flex">   
+                                                <img src="./img/luckchick.svg">
+                                                <div>
+                                                    <h5>Lucky’s Chicken</h5>
+                                                    <span>Азиатская, паназиатская, гр...</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="width: 50%; margin-left: 20px;" class="generate_stuff">
+                                        <div class="generate_stuff_inner">
+                                            <div class="generate_stuff_heading flex">   
+                                                <img src="./img/eat.svg">
+                                                <div>
+                                                    <span>Питание</span>
+                                                    <p>Обед и ужин</p>
+                                                </div>
+                                            </div>
+                                            <div class="generate_stuff_bottom flex">   
+                                                <img src="./img/luckchick.svg">
+                                                <div>
+                                                    <h5>Lucky’s Chicken</h5>
+                                                    <span>Азиатская, паназиатская, гр...</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div style="margin-left: 10px;" class="generate_content_inner2 grid grid-flow-col grid-cols-1 grid-rows-4 gap-4">
+                                
+
+            
+                                <div style="margin-bottom: 10px;" class="generate_ticket">
+                                    <div class="generate_ticket_inner">
+                                        <div class="generate_ticket_heading flex">
+                                            <img src="./img/avialogo.svg">
+                                            <div class="generate_ticket_name">
+                                                <span>Алматы - Денпасар</span>
+                                                <div class="flex">
+                                                    <h2>DV-731</h2>
+                                                    <p>/ Эконом-класс</p>
+                                                </div>
+                                            </div>
+                                            <div class="ticket_weight">
+                                                <div class="flex"><span>Ручная кладь: 5 кг</span><img src="./img/briefcase.svg"></div>
+                                                <div class="flex"><span>Багаж: 20 кг</span><img src="./img/luggage.svg"></div>
+                                            </div>
+                                        </div>
+                                        <div class="generate_ticket_bottom flex">
+                                            <div class="ticket-date">
+                                                <p>18:25</p>
+                                                <span>15 марта, вс</span>
+                                            </div>
+                                            <div class="flex">
+                                                <div>
+                                                    <img src="./img/line.svg">
+                                                    <h4>ALA</h4>
+                                                </div>
+                                                <div class="generate_ticket_direct">
+                                                    <div class="flex">
+                                                        <img src="./img/airplaneG.svg">
+                                                        <p>В пути: 2ч 20мин</p>
+                                                    </div>
+                                                    <span>Без пересадок</span>
+                                                </div>
+                                                <div>
+                                                    <img src="./img/line.svg">
+                                                    <h4 style="text-align: right;">DEN</h4>
+                                                </div>
+                                            </div>
+                                            <div class="ticket-date_right">
+                                                <p>21:00</p>
+                                                <span>15 марта, вс</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div style="margin-top: 10px; margin-bottom: 10px;" class="generate_ticket">
+                                    <div class="generate_ticket_inner">
+                                        <div class="generate_ticket_heading flex">
+                                            <img src="./img/avialogo.svg">
+                                            <div class="generate_ticket_name">
+                                                <span>Алматы - Денпасар</span>
+                                                <div class="flex">
+                                                    <h2>DV-731</h2>
+                                                    <p>/ Эконом-класс</p>
+                                                </div>
+                                            </div>
+                                            <div class="ticket_weight">
+                                                <div class="flex"><span>Ручная кладь: 5 кг</span><img src="./img/briefcase.svg"></div>
+                                                <div class="flex"><span>Багаж: 20 кг</span><img src="./img/luggage.svg"></div>
+                                            </div>
+                                        </div>
+                                        <div class="generate_ticket_bottom flex">
+                                            <div class="ticket-date">
+                                                <p>18:25</p>
+                                                <span>15 марта, вс</span>
+                                            </div>
+                                            <div class="flex">
+                                                <div>
+                                                    <img src="./img/line.svg">
+                                                    <h4>ALA</h4>
+                                                </div>
+                                                <div class="generate_ticket_direct">
+                                                    <div class="flex">
+                                                        <img src="./img/airplaneG.svg">
+                                                        <p>В пути: 2ч 20мин</p>
+                                                    </div>
+                                                    <span>Без пересадок</span>
+                                                </div>
+                                                <div>
+                                                    <img src="./img/line.svg">
+                                                    <h4 style="text-align: right;">DEN</h4>
+                                                </div>
+                                            </div>
+                                            <div class="ticket-date_right">
+                                                <p>21:00</p>
+                                                <span>15 марта, вс</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div style="margin-top: 10px; margin-bottom: 10px;" class="flex">
+                                    <div style="width: 50%;" class="generate_stuff">
+                                        <div class="generate_stuff_inner">
+                                            <div class="generate_stuff_heading flex">   
+                                                <img src="./img/eat.svg">
+                                                <div>
+                                                    <span>Питание</span>
+                                                    <p>Обед и ужин</p>
+                                                </div>
+                                            </div>
+                                            <div class="generate_stuff_bottom flex">   
+                                                <img src="./img/luckchick.svg">
+                                                <div>
+                                                    <h5>Lucky’s Chicken</h5>
+                                                    <span>Азиатская, паназиатская, гр...</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="width: 50%; margin-left: 20px;" class="generate_stuff">
+                                        <div class="generate_stuff_inner">
+                                            <div class="generate_stuff_heading flex">   
+                                                <img src="./img/eat.svg">
+                                                <div>
+                                                    <span>Питание</span>
+                                                    <p>Обед и ужин</p>
+                                                </div>
+                                            </div>
+                                            <div class="generate_stuff_bottom flex">   
+                                                <img src="./img/luckchick.svg">
+                                                <div>
+                                                    <h5>Lucky’s Chicken</h5>
+                                                    <span>Азиатская, паназиатская, гр...</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div style="margin-top: 10px" class="generate_add">
+                                    
+                                    <div class="generate_add_inner">
+                                        <img src="./img/addG.svg">
+                                        <p>Добавить</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                    </div>
+                </div>
+                <footer class="footer">
+                        <div class="footer__inner">
+                            <div class="footer__item">
+                                <a class="footer__link" href="">Горящие туры</a>
+                                <img src="img/divider.svg" alt="">
+                                <a class="footer__link" href="">Конструктор туров</a>
+                            </div>
+                            <div class="footer__item">
+                                <a class="footer__link" href="">Стать партнером</a>
+                                <img src="img/divider.svg" alt="">
+                                <a class="footer__link" href="">О компании</a>
+                                <a class="footer__link" href="">Контакты</a>
+                                <a class="footer__link" href="">Блог</a>
+                                <img src="img/divider.svg" alt="">
+                                <a class="footer__link" href="#">TOO Pickhot © 2021</a>
+                            </div>
+                        </div>
+                </footer>
+            </div>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/libs.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

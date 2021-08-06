@@ -1,0 +1,360 @@
+.main_generate
+	background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../img/background-image.png)
+    height: 100vh
+    width: 100%
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+
+.generate 
+	&_inner 
+	&_header 
+		padding-top: 20px
+	&_header_nav 
+		h1 
+			color: #FFFFFF
+			font-size: 36px
+			line-height: 36px
+	&_header_back
+		img 
+			padding-right: 13px 
+			padding-bottom: 5px
+
+		a 
+			text-decoration: none
+			color: #FFFFFFCC
+			font-size: 14px
+			padding-right: 20px
+
+	&_favourite
+		img 
+			padding-left: 8px
+			padding-right: 8px
+			cursor: pointer
+
+		span 
+			color: #FFFFFFCC
+			font-size: 14px
+	&_header_budget 
+		width: 280px
+		height: 60px
+		overflow: hidden
+		background-color: black
+		border-radius: 5px
+		margin-left: 410px
+		.flex
+			background-color: #F8F8F8B2
+			padding-bottom: 30px
+
+			span 
+				color: #42424E
+				font-size: 14px
+				line-height: 14px
+				padding-top: 12px
+
+			p 
+				color: #2B2B34
+				font-size: 16px
+				line-height: 12px
+
+		img 
+			margin-top: 2px
+			padding-left: 15px
+			padding-right: 10px
+			cursor: pointer
+
+		img:last-child
+			padding-left: 30px
+			padding-right: 4px
+	&_header_btn
+		padding-top: 15px
+		padding-left: 10px
+
+		a 
+			text-decoration: none
+			color: #FFFFFF
+			font-size: 20px
+			border: 1px solid #ED6F2F
+			padding: 16px 30px
+			background-color: #ED6F2F
+			border-radius: 5px
+			margin: 0
+
+.generate 
+	&_content 
+		padding: 40px 0
+	&_content_inner 
+		&.grid-rows-3
+			grid-template-rows: 160px 360px 180px
+	&_operator 
+		background: #F8F8F8B2
+		border-radius: 5px
+		cursor: pointer
+		transition: 0.3s all
+		height: 100%
+
+		a 
+			opacity: 0
+			transition: 0.3s all
+
+		&:hover
+			transform: scale(1.05)
+			background: white
+			height: 115%
+			z-index: 5
+
+		&:hover
+			a
+				opacity: 1
+
+		span, p, img 
+			padding: 0 
+			margin: 0
+			margin-top: 4px	
+	&_operator_inner 
+		padding: 23px 20px 14px 20px
+
+		h6 
+			color: #2B2B34
+			font-family: sans-serif
+			font-size: 14px
+			line-height: 20px	
+			padding-top: 20px
+
+	&_operator_heading 
+		div 	
+			padding-left: 12px
+
+		span
+			color: #42424E
+			font-size: 14px
+			line-height: 14px
+
+		p 
+			color: #1F1F26
+			font-weight: 500
+			font-size: 14px
+			line-height: 14px
+		
+	&_rating 
+		&:hover
+			transform: scale(1.05)
+			background: white
+
+		background: #F8F8F8B2
+		border-radius: 5px
+		transition: 0.3s all
+		margin-left: 20px
+		cursor: pointer
+
+		span, p, img 
+			padding: 0 
+			margin: 0
+	&_rating_inner 
+		padding: 23px 23px 18px 21px
+
+		p 
+			color: #42424E
+			font-size: 14px
+			line-height: 14px
+			padding-top: 20px
+
+		h6 	
+			font-size: 18px
+			line-height: 18px
+			color: #14141A
+			padding-top: 14px
+	&_rating_heading 
+		div 	
+			padding-left: 12px
+
+		span
+			color: #42424E
+			font-size: 14px
+			line-height: 14px
+	&_hotel 
+		background: #F8F8F8B2
+		margin-top: 20px
+		border-radius: 5px
+		transition: 0.3s all
+		cursor: pointer
+
+		&:hover
+			transform: scale(1.05)
+			background: white
+	&_hotel_inner 
+		padding: 5px 20px 2px 5px
+	&_hotel_heading 
+		padding-left: 17.5px
+
+		span 
+			color: #2B2B34
+			font-size: 14px
+			line-height: 14px
+			padding-top: 12px
+
+		p 	
+			color: #14141A
+			font-size: 14px
+			line-height: 14px
+	&_hotel_rating 
+		padding-left: 17.5px
+	&_hotel_stuff 
+		padding-left: 17.5px
+	&_stuff 
+		background: #F8F8F8B2
+		border-radius: 5px
+		cursor: pointer
+		transition: 0.3s all
+
+		&:hover
+			transform: scale(1.05)
+			background: white
+	&_stuff_inner 
+		padding: 0 20px
+	&_stuff_heading
+		div 
+			padding-left: 13px
+
+		span 
+			padding-top: 12px
+	&_stuff_bottom
+		div 	
+			padding-left: 13px
+			
+		padding-top: 20px
+
+.generate 
+	&_ticket 
+		background: #F8F8F8B2
+		border-radius: 5px
+		cursor: pointer
+		transition: 0.3s all
+
+		&:hover
+			transform: scale(1.05)
+			background: white
+		&_inner 
+			padding: 20px
+	&_ticket_heading 
+		img 
+			margin-top: -8px
+	&_ticket_name 
+		padding-left: 15px
+
+		span 
+			color: #2B2B34
+			font-size: 14px
+			line-height: 14px
+
+		h2 
+			color: #14141A
+			font-size: 20px
+			line-height: 20px
+
+		p 
+			color: #42424E
+			font-size: 14px
+			line-height: 14px
+			padding-top: 5px
+	&_ticket_bottom 
+		justify-content: space-between
+		padding-top: 16px
+
+		.ticket-date
+			p 
+				font-weight: 700
+				font-size: 16px
+				line-height: 16px
+				color: #2B2B34
+				padding-top: 8px
+				text-align-last: left
+
+			span 
+				color: #42424E
+				font-size: 12px
+				line-height: 12px
+				vertical-align: top
+
+		.ticket-date_right
+			p 
+				font-weight: 700
+				font-size: 16px
+				line-height: 16px
+				color: #2B2B34
+				padding-top: 8px
+				text-align: right
+
+			span 
+				color: #42424E
+				font-size: 12px
+				line-height: 12px
+				vertical-align: top
+
+		h4 
+			color: #42424E
+			font-size: 10px
+			line-height: 10px
+			padding-top: 17px
+			margin: 0
+
+	&_ticket_direct
+		padding: 0 10px
+
+		img 
+			margin-top: -7px
+
+		p 
+			color: #42424E
+			font-size: 12px
+			line-height: 12px
+			padding-top: 8px
+			padding-left: 5px
+
+		span 
+			color: #595966
+			font-size: 12px
+			line-height: 12px
+			padding-left: 20px
+
+	&_add
+		background: #F8F8F8B2
+		border-radius: 5px
+		width: 48.5%
+		cursor: pointer
+		transition: 0.3s all
+
+		&:hover
+			transform: scale(1.05)
+			background: white
+
+	&_add_inner
+		text-align: center
+		padding-top: 15%
+
+		p 	
+			color: #42424E
+			font-size: 16px
+			line-height: 12px
+			padding-top: 12px
+
+.ticket_weight
+	padding-left: 100px
+
+	span 
+		color: #2B2B34
+		font-size: 14px
+		line-height: 14px
+
+	.flex
+		padding-top: 9px
+
+	.flex:first-child
+		padding-top: 3px
+
+	img 
+		margin-top: 0
+
+.generate_content_inner2
+	&.grid-rows-4
+			grid-template-rows: 170px 180px 180px 170px

@@ -7,6 +7,8 @@
 @import 'popup'
 @import 'authorization'
 @import 'tours'
+@import 'about'
+@import 'generatetour'
 
 // GLOBAL
 
@@ -30,6 +32,16 @@ a
 
 h1,h2,h3,h4,h5,h6
     margin: 0
+
+.main__container2
+    display: flex
+    position: relative
+    flex-direction: column
+    height: auto
+    width: 100%
+
+.about_inner2
+    padding: 50px 0
 
 .title
     font-weight: 800
@@ -263,3 +275,28 @@ h1,h2,h3,h4,h5,h6
             color: orange !important
         & + .footer__link
             margin-left: 22px
+
+@media (max-width: 481px) 
+  .container 
+    max-width: 481px
+
+
+@media (max-width: 640px) 
+  .container 
+    max-width: 640px
+  
+
+@media (max-width: 768px) 
+  .container 
+    max-width: 768px
+  
+
+@media (max-width: 992px) 
+  .container
+    max-width: 992px
+ 
+
+@media (max-width: 1024px)
+  .container
+    max-width: 1024px
+ 
