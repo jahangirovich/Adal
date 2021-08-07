@@ -39,7 +39,7 @@
 		width: 280px
 		height: 60px
 		overflow: hidden
-		background-color: black
+		background-color: #F8F8F8B2
 		border-radius: 5px
 		margin-left: 410px
 		.flex
@@ -90,12 +90,16 @@
 		background: #F8F8F8B2
 		border-radius: 5px
 		cursor: pointer
-		transition: 0.3s all
+		transition: 0.1s all
 		height: 100%
 
 		a 
 			opacity: 0
-			transition: 0.3s all
+			transition: 0.1s all
+			font-size: 14px
+			line-height: 10px
+			color: #72727E
+			font-weight: 700
 
 		&:hover
 			transform: scale(1.05)
@@ -140,10 +144,22 @@
 		&:hover
 			transform: scale(1.05)
 			background: white
+			height: 140%
+			z-index: 5
+
+			.hidden_block_rating
+				opacity: 1
+
+			hr 
+				display: block
+
+		hr 
+			display: none
 
 		background: #F8F8F8B2
+		height: 100%
 		border-radius: 5px
-		transition: 0.3s all
+		transition: 0.1s all
 		margin-left: 20px
 		cursor: pointer
 
@@ -174,16 +190,39 @@
 			line-height: 14px
 	&_hotel 
 		background: #F8F8F8B2
+		height: 94.5%
 		margin-top: 20px
 		border-radius: 5px
 		transition: 0.3s all
 		cursor: pointer
 
+		span 
+			padding-left: 7px
+
+		p 
+			padding-left: 7px
+
+		hr 
+			opacity: 0
+			transition: all 0.1s
+
 		&:hover
 			transform: scale(1.05)
 			background: white
+			height: 120%
+
+			.hidden_block_hotel
+				opacity: 1
+
+			hr 
+				opacity: .5
 	&_hotel_inner 
-		padding: 5px 20px 2px 5px
+		padding: 5px 0 2px 5px
+
+		div
+			hr 
+				margin-left: 17.5px
+
 	&_hotel_heading 
 		padding-left: 17.5px
 
@@ -199,17 +238,40 @@
 			line-height: 14px
 	&_hotel_rating 
 		padding-left: 17.5px
+
+		h1 
+			color: #14141A
+			font-size: 20px
+			line-height: 20px
+			letter-spacing: .5px
+			padding-top: 10px
+
+		.flex
+			padding-top: 5px
+
 	&_hotel_stuff 
 		padding-left: 17.5px
+
 	&_stuff 
 		background: #F8F8F8B2
 		border-radius: 5px
 		cursor: pointer
-		transition: 0.3s all
+		transition: 0.1s all
+		height: 100%
+
+		hr 
+			opacity: 0
 
 		&:hover
 			transform: scale(1.05)
 			background: white
+			height: 160%
+
+			.hidden_block_hotel
+				opacity: 1
+
+			hr 
+				opacity: .5
 	&_stuff_inner 
 		padding: 0 20px
 	&_stuff_heading
@@ -224,16 +286,28 @@
 			
 		padding-top: 20px
 
+		.flex 
+			margin-left: -23px
+
+			img 
+				padding-left: 10px
+
 .generate 
 	&_ticket 
 		background: #F8F8F8B2
 		border-radius: 5px
 		cursor: pointer
-		transition: 0.3s all
+		height: all
+		transition: all 0.1s
 
 		&:hover
 			transform: scale(1.05)
 			background: white
+			height: 145%
+
+			.hidden_block_hotel
+				opacity: 1
+
 		&_inner 
 			padding: 20px
 	&_ticket_heading 
@@ -322,7 +396,7 @@
 		border-radius: 5px
 		width: 48.5%
 		cursor: pointer
-		transition: 0.3s all
+		transition: 0.1s all
 
 		&:hover
 			transform: scale(1.05)
@@ -358,3 +432,167 @@
 .generate_content_inner2
 	&.grid-rows-4
 			grid-template-rows: 170px 180px 180px 170px
+
+.hidden_block_rating
+	display: flex
+	opacity: 0
+.hidden_block_hotel
+	opacity: 0
+
+	.hotel_price
+		padding-top: 5px
+
+		span 
+			color: #72727E
+			font-size: 14px
+			line-height: 14px
+
+		p 
+			font-weight: 700
+			font-size: 16px
+			line-height: 12px
+			color: #14141A
+			padding-top: 8px
+
+
+.generate 
+	&_empty
+		.main__container
+			display: block
+			flex-direction: unset
+			justify-content: unset
+
+		h1 
+			color: #FFFFFF
+			font-size: 24px
+			line-height: 29px
+
+		span 
+			color: #CECED9
+			font-size: 16px
+			line-height: 22px
+			max-width: 326px
+
+		background: #14141A 
+	&_empty_header 
+		display: flex
+		justify-content: space-between
+		padding-top: 25px
+
+		button
+			background-color: #1F1F26
+			border: 1px solid #1F1F26
+			border-radius: 5px
+			padding: 7px
+			img
+				width: 12px
+				height: 12px
+
+			a 
+				color: #fff
+
+	&_empty_content 
+		text-align: center
+		padding-top: 160px
+
+		h1 
+			padding-top: 10px
+
+		span 
+			padding-top: 10px
+
+		button
+
+			border: 1px solid #FF7733
+			background-color: #FF7733
+			border-radius: 5px
+			margin: 0 auto
+			margin-top: 10px
+			padding: 10px
+
+			img 
+				width: 20px
+				height: 20px
+				margin-top: -3px
+				margin-right: 5px
+
+			a 
+				color: #fff
+				margin-top: 3px
+
+.generate 
+	&_comments 
+		display: flex
+		padding-top: 25px
+	&_comments_mycomment 
+		width: 30%
+		background: #1F1F26
+		border-radius: 10px
+		margin-right: 10px
+		height: 368px
+	&_comments_mycomment_inner 
+		text-align: center
+		padding: 18px 20px
+	&_comments_mycomment_heading 
+		color: #fff
+		font-size: 20px
+		line-height: 24px
+	&_comments_mycomment_rating 
+		padding-top: 16px
+	&_comments_mycomment_que 
+		color: #F5F5F7
+		font-size: 16px
+		line-height: 22px
+		padding-top: 16px
+	&_comments_mycomment_input 
+		width: 100%
+		height: 120px
+		margin-top: 16px
+		background: #14141A
+		border: none
+	&_comments_mycomment_btn 
+		a 
+			color: #fff
+			font-size: 16px
+			line-height: 12px
+			vertical-align: middle !important 
+
+		border: 1px solid #FF7733
+		background: #FF7733
+		border-radius: 5px
+		height: 40px
+		margin-top: 16px
+
+	&_comments_pastcomments 
+		width: 70%
+		margin-left: 10px
+
+		img 
+			width: 40px
+			height: 40px
+			margin-top: 7px
+	&_comments_pastcomments_comment 
+	&_comments_pastcomments_heading 
+	&_comments_pastcomments_name 
+
+		padding-left: 10px
+
+		h1 
+			color: #F5F5F7
+			font-size: 16px
+
+		span
+			font-size: 12px
+			color: #A3A3B1
+
+	&_comments_pastcomments_text 
+		font-size: 16px
+		line-height: 22px
+		color: #F5F5F7
+		border: 1px solid #2B2B34
+		background-color: #2B2B34
+		border-radius: 5px
+		padding: 10px
+		margin-top: 10px
+	&_comments_pastcomments_answer 
+		margin-left: 50px
