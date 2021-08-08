@@ -2,6 +2,7 @@
 	background-color: #14141A
 .about 
 	&_inner
+		display: flex
 	&_nav
 		background-color: #1F1F26
 		width: 30%
@@ -38,6 +39,7 @@
 		font-size: 24px
 		line-height: 29px
 	&_content_main
+		display: flex
 		padding-top: 30px
 		p
 			color: #F5F5F7
@@ -77,16 +79,19 @@
 		font-size: 20px
 		line-height: 24px
 	&_contacts_adress
+		display: flex
 		padding-top: 23px 
 
 		p 
 			font-size: 16px
 			line-height: 22px
 	&_contacts_phone
+		display: flex
 		justify-content: space-between
 		padding-top: 23px 
 
 	&_contacts_social 
+		display: flex 
 		padding-top: 23px
 
 .about  
@@ -98,6 +103,7 @@
 			font-size: 24px
 			line-height: 29px
 	&_blog_content
+		display: flex
 		padding-top: 20px
 
 		p 
@@ -182,3 +188,101 @@
 			font-size: 16px
 			line-height: 22px
 			padding-top: 10px
+
+.about_contacts
+	display: flex
+
+.hide_for_dt
+	display: none
+
+@media (max-width: 768px)
+	.about_inner
+		display: block 
+
+	.about_nav
+		display: none
+
+	.about_content
+		width: 100%
+		margin: 0
+		background: none 
+		padding: 0
+		padding-top: 20px
+
+		&_heading 
+			padding-left: 20px
+			padding-top: 20px
+
+	.about_content_inner
+		padding: 0
+
+	.about_content_inner2
+		padding: 0
+
+	.about_content_main
+		display: block 
+		background: #1F1F26
+		padding: 0
+		margin-top: 28px
+
+	.about_contacts
+		display: block 
+
+	.hide_for_mb
+		display: none
+
+	.about_content_text 
+		p 
+			font-size: 14px
+			line-height: 17.5px
+			padding-left: 0
+			padding: 20px
+
+	.about_contacts_adress
+		display: flex
+
+	.about_contacts_phone
+		display: block
+
+		.flex:last-child
+			padding-top: 25px
+
+	.about_contacts_social
+		display: block
+
+		.flex:last-child
+			padding-top: 25px
+
+	.about_contacts_map 
+		img 
+			width: 100%
+			padding: 20px
+
+	.about_blog_heading
+		padding-top: 20px
+		padding-left: 20px
+
+	.about_blog_content
+		display: block
+		padding: 0
+
+	.about_blog_img
+		width: 100%
+		padding: 20px
+
+	.footer
+		display: none 
+
+	.hide_for_dt
+		display: block 
+		padding-left: 20px
+		padding-top: 16px
+
+	.about_blog_btn
+		padding-bottom: 40px
+
+	.about_blog-item_content
+		padding: 20px
+
+	.about_blog_questions
+		padding: 20px

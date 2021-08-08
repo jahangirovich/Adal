@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.min.css" />
         <link rel="stylesheet" href="./css/mytailwind.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -118,7 +118,7 @@
                         </div>
                     </div>
                 </header>
-                <div class="about_inner flex">
+                <div class="about_inner">
                     <div class="about_nav">
                         <a class="activeAN" href="#">О компании</a>
                         <a href="#">Контакты</a>
@@ -132,10 +132,10 @@
                         <div class="about_content_inner">
                             <div class="about_content_heading">О компании</div>
 
-                                <div class="about_content_main flex">
+                                <div class="about_content_main">
                                     <div class="about_content_img">
-                                        <img src="./img/about-1.svg">
-                                        <img src="./img/about-2.svg">
+                                        <img style="width: 100%;" src="./img/about-1.svg">
+                                        <img class="hide_for_mb" src="./img/about-2.svg">
                                     </div>
                                     <div class="about_content_text">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium tristique lectus. Nunc placerat sagittis odio, eu pellentesque nulla faucibus interdum. Duis ex neque, maximus non suscipit vel, fermentum vel tellus. Pellentesque ut aliquet mauris, molestie varius tortor. Sed ac justo lacinia, vestibulum nisi sit amet, ultrices ex. Curabitur at sagittis est. Maecenas interdum condimentum risus, a tristique massa mattis quis. Sed at turpis porta, accumsan est ac, consequat purus. Aenean molestie ipsum fermentum, placerat diam at, finibus quam. Fusce mattis eu nisl elementum mattis. Sed sed nisi sed dui imperdiet auctor et vitae sem. Nullam ut ultrices ipsum, a iaculis ligula. Nullam maximus pulvinar porta. Aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium tristique lectus. Nunc placerat sagittis odio, eu pellentesque nulla faucibus interdum. Duis ex neque, maximus non suscipit vel, fermentum vel tellus. Pellentesque ut aliquet mauris, molestie varius tortor. Sed ac justo lacinia, vestibulum nisi sit amet, ultrices ex. Curabitur at sagittis est. Maecenas interdum condimentum risus, a tristique massa mattis quis. Sed at turpis porta, accumsan est ac, consequat purus. Aenean molestie ipsum fermentum, placerat diam at, finibus quam. Fusce mattis eu nisl elementum mattis. Sed sed nisi sed dui imperdiet auctor et vitae sem. Nullam ut ultrices ipsum, a iaculis ligula. Nullam maximus pulvinar porta. Aliquam erat volutpat.</p>
@@ -207,13 +207,14 @@
                         <div class="about_content_inner">
                             <div class="about_content_heading">Контакты</div>
 
-                                <div class="about_content_main">
-                                    <div class="flex">
+                                <div class="about_content_main block">
+                                    <div class="about_contacts">
+                                        <div class="about_contacts_heading hide_for_dt">Головной офис</div>
                                         <div class="about_contacts_map"><img src="https://via.placeholder.com/294x220" alt=""></div>
                                         <div class="about_contacts_text">
-                                            <div class="about_contacts_heading">Головной офис</div>
-                                            <div class="about_contacts_adress flex"><img src="./img/adress.svg"><p>Казахстан, г. Алматы, Бостандыкский район, <br>ул. Розыбакиева, 241Б</p></div>
-                                            <div class="about_contacts_phone flex">
+                                            <div class="about_contacts_heading hide_for_mb">Головной офис</div>
+                                            <div class="about_contacts_adress"><img src="./img/adress.svg"><p>Казахстан, г. Алматы, Бостандыкский район, <br>ул. Розыбакиева, 241Б</p></div>
+                                            <div class="about_contacts_phone">
                                                 <div style="width: 50%; margin-right: 45px;" class="flex">
                                                     <img  src="./img/w_phone.svg">
                                                     <div>
@@ -229,7 +230,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="about_contacts_social flex">
+                                            <div class="about_contacts_social">
                                                 <div style="width: 50%; margin-right: 45px;" class="flex">
                                                     <img src="./img/tellegram.svg">
                                                     <div>
@@ -247,12 +248,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div style="padding: 20px 0;" class="flex">
+                                    <div style="padding: 20px 0;" class="about_contacts">
                                         <div class="about_contacts_map"><img src="https://via.placeholder.com/294x220" alt=""></div>
                                         <div class="about_contacts_text">
                                             <div class="about_contacts_heading">Головной офис</div>
-                                            <div class="about_contacts_adress flex"><img src="./img/adress.svg"><p>Казахстан, г. Алматы, Бостандыкский район, <br>ул. Розыбакиева, 241Б</p></div>
-                                            <div class="about_contacts_phone flex">
+                                            <div class="about_contacts_adress"><img src="./img/adress.svg"><p>Казахстан, г. Алматы, Бостандыкский район, <br>ул. Розыбакиева, 241Б</p></div>
+                                            <div class="about_contacts_phone">
                                                 <div style="width: 50%; margin-right: 45px;" class="flex">
                                                     <img  src="./img/w_phone.svg">
                                                     <div>
@@ -268,7 +269,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="about_contacts_social flex">
+                                            <div class="about_contacts_social">
                                                 <div style="width: 50%; margin-right: 45px;" class="flex">
                                                     <img src="./img/tellegram.svg">
                                                     <div>
@@ -357,8 +358,8 @@
                                 <h1>Блог</h1>
                             </div>
 
-                                <div class="about_content_main">
-                                    <div class="about_blog_content flex">
+                                <div class="about_content_main block">
+                                    <div class="about_blog_content">
                                         <img src="./img/blog-img-1.svg" class="about_blog_img">
                                         <div class="about_blog_text">
                                             <h1>Мы запустили новый сервис</h1>
@@ -367,7 +368,7 @@
                                             <div class="about_blog_btn flex"><a href="#">Открыть запись</a><img src="./img/arrow_blog.svg"></div>
                                         </div>
                                     </div>
-                                    <div class="about_blog_content flex">
+                                    <div class="about_blog_content">
                                         <img src="./img/blog-img-2.svg" class="about_blog_img">
                                         <div class="about_blog_text">
                                             <h1>Мы запустили новый сервис</h1>
@@ -376,7 +377,7 @@
                                             <div class="about_blog_btn flex"><a href="#">Открыть запись</a><img src="./img/arrow_blog.svg"></div>
                                         </div>
                                     </div>
-                                    <div class="about_blog_content flex">
+                                    <div class="about_blog_content">
                                         <img src="./img/blog-img-3.svg" class="about_blog_img">
                                         <div class="about_blog_text">
                                             <h1>Мы запустили новый сервис</h1>
@@ -466,7 +467,7 @@
                                     <div class="about_blog-item_content">
                                         <h1>Мы запустили новый сервис</h1>
                                         <span>12 янв 2020</span>
-                                        <img src="./img/about-item.svg">
+                                        <img style="width: 100%;" src="./img/about-item.svg">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium tristique lectus. Nunc placerat sagittis odio, eu pellentesque nulla faucibus interdum. Duis ex neque, maximus non suscipit vel, fermentum vel tellus. Pellentesque ut aliquet mauris, molestie varius tortor. Sed ac justo lacinia, vestibulum nisi sit amet, ultrices ex. Curabitur at sagittis est. Maecenas interdum condimentum risus, a tristique massa mattis quis. Sed at turpis porta, accumsan est ac, consequat purus. Aenean molestie ipsum fermentum, placerat diam at, finibus quam. Fusce mattis eu nisl elementum mattis. Sed sed nisi sed dui imperdiet auctor et vitae sem. Nullam ut ultrices ipsum, a iaculis ligula. Nullam maximus pulvinar porta. Aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                                     </div>    
                                 </div>
@@ -545,12 +546,14 @@
 
                                 <div class="about_content_main">
                                     <div class="about_blog_content">
-                                        <h1>Как выгодно приобрести тур?</h1>                                        
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium tristique lectus. Nunc placerat sagittis odio, eu pellentesque nulla faucibus interdum. Duis ex neque, maximus non suscipit vel, fermentum vel tellus. Pellentesque ut aliquet mauris, molestie varius tortor. Sed ac justo lacinia, vestibulum nisi sit amet, ultrices ex. Curabitur at sagittis est. Maecenas interdum condimentum risus, a tristique massa mattis quis. Sed at turpis porta, accumsan est ac, consequat purus. Aenean molestie ipsum fermentum, placerat diam at, finibus quam. Fusce mattis eu nisl elementum mattis. Sed sed nisi sed dui imperdiet auctor et vitae sem. Nullam ut ultrices ipsum, a iaculis ligula. Nullam maximus pulvinar porta. Aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                                        <h1>Что если я не нашел подходящий тур?</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium tristique lectus. Nunc placerat sagittis odio, eu pellentesque nulla faucibus interdum. Duis ex neque, maximus non suscipit vel, fermentum vel tellus. Pellentesque ut aliquet mauris, molestie varius tortor. Sed ac justo lacinia, vestibulum nisi sit amet, ultrices ex.</p>
-                                        <h1>Я хочу приобрести тур позже</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium tristique lectus. Nunc placerat sagittis odio, eu pellentesque nulla faucibus interdum. Duis ex neque, maximus non suscipit vel, fermentum vel tellus. Pellentesque ut aliquet mauris, molestie varius tortor. Sed ac justo lacinia, vestibulum nisi sit amet, ultrices ex. Curabitur at sagittis est. Maecenas interdum condimentum risus, a tristique massa mattis quis. Sed at turpis porta, accumsan est ac, consequat purus. Aenean molestie ipsum fermentum, placerat diam at, finibus quam. Fusce mattis eu nisl elementum mattis. </p>
+                                        <div class="about_blog_questions">
+                                            <h1>Как выгодно приобрести тур?</h1>                                        
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium tristique lectus. Nunc placerat sagittis odio, eu pellentesque nulla faucibus interdum. Duis ex neque, maximus non suscipit vel, fermentum vel tellus. Pellentesque ut aliquet mauris, molestie varius tortor. Sed ac justo lacinia, vestibulum nisi sit amet, ultrices ex. Curabitur at sagittis est. Maecenas interdum condimentum risus, a tristique massa mattis quis. Sed at turpis porta, accumsan est ac, consequat purus. Aenean molestie ipsum fermentum, placerat diam at, finibus quam. Fusce mattis eu nisl elementum mattis. Sed sed nisi sed dui imperdiet auctor et vitae sem. Nullam ut ultrices ipsum, a iaculis ligula. Nullam maximus pulvinar porta. Aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                            <h1>Что если я не нашел подходящий тур?</h1>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium tristique lectus. Nunc placerat sagittis odio, eu pellentesque nulla faucibus interdum. Duis ex neque, maximus non suscipit vel, fermentum vel tellus. Pellentesque ut aliquet mauris, molestie varius tortor. Sed ac justo lacinia, vestibulum nisi sit amet, ultrices ex.</p>
+                                            <h1>Я хочу приобрести тур позже</h1>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium tristique lectus. Nunc placerat sagittis odio, eu pellentesque nulla faucibus interdum. Duis ex neque, maximus non suscipit vel, fermentum vel tellus. Pellentesque ut aliquet mauris, molestie varius tortor. Sed ac justo lacinia, vestibulum nisi sit amet, ultrices ex. Curabitur at sagittis est. Maecenas interdum condimentum risus, a tristique massa mattis quis. Sed at turpis porta, accumsan est ac, consequat purus. Aenean molestie ipsum fermentum, placerat diam at, finibus quam. Fusce mattis eu nisl elementum mattis. </p>
+                                        </div>
                                     </div>    
                                 </div>
                         </div>
@@ -628,12 +631,14 @@
 
                                 <div class="about_content_main">
                                     <div class="about_blog_content">
-                                        <h1>Подзаголовок 1</h1>                                        
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium tristique lectus. Nunc placerat sagittis odio, eu pellentesque nulla faucibus interdum. Duis ex neque, maximus non suscipit vel, fermentum vel tellus. Pellentesque ut aliquet mauris, molestie varius tortor. Sed ac justo lacinia, vestibulum nisi sit amet, ultrices ex. Curabitur at sagittis est. Maecenas interdum condimentum risus, a tristique massa mattis quis. Sed at turpis porta, accumsan est ac, consequat purus. Aenean molestie ipsum fermentum, placerat diam at, finibus quam. Fusce mattis eu nisl elementum mattis. Sed sed nisi sed dui imperdiet auctor et vitae sem. Nullam ut ultrices ipsum, a iaculis ligula. Nullam maximus pulvinar porta. Aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                                        <h1>Подзаголовок 2</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium tristique lectus. Nunc placerat sagittis odio, eu pellentesque nulla faucibus interdum. Duis ex neque, maximus non suscipit vel, fermentum vel tellus. Pellentesque ut aliquet mauris, molestie varius tortor. Sed ac justo lacinia, vestibulum nisi sit amet, ultrices ex.</p>
-                                        <h1>Подзаголовок 3</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium tristique lectus. Nunc placerat sagittis odio, eu pellentesque nulla faucibus interdum. Duis ex neque, maximus non suscipit vel, fermentum vel tellus. Pellentesque ut aliquet mauris, molestie varius tortor. Sed ac justo lacinia, vestibulum nisi sit amet, ultrices ex. Curabitur at sagittis est. Maecenas interdum condimentum risus, a tristique massa mattis quis. Sed at turpis porta, accumsan est ac, consequat purus. Aenean molestie ipsum fermentum, placerat diam at, finibus quam. Fusce mattis eu nisl elementum mattis. </p>
+                                        <div class="about_blog_questions">
+                                            <h1>Подзаголовок 1</h1>                                        
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium tristique lectus. Nunc placerat sagittis odio, eu pellentesque nulla faucibus interdum. Duis ex neque, maximus non suscipit vel, fermentum vel tellus. Pellentesque ut aliquet mauris, molestie varius tortor. Sed ac justo lacinia, vestibulum nisi sit amet, ultrices ex. Curabitur at sagittis est. Maecenas interdum condimentum risus, a tristique massa mattis quis. Sed at turpis porta, accumsan est ac, consequat purus. Aenean molestie ipsum fermentum, placerat diam at, finibus quam. Fusce mattis eu nisl elementum mattis. Sed sed nisi sed dui imperdiet auctor et vitae sem. Nullam ut ultrices ipsum, a iaculis ligula. Nullam maximus pulvinar porta. Aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                            <h1>Подзаголовок 2</h1>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium tristique lectus. Nunc placerat sagittis odio, eu pellentesque nulla faucibus interdum. Duis ex neque, maximus non suscipit vel, fermentum vel tellus. Pellentesque ut aliquet mauris, molestie varius tortor. Sed ac justo lacinia, vestibulum nisi sit amet, ultrices ex.</p>
+                                            <h1>Подзаголовок 3</h1>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium tristique lectus. Nunc placerat sagittis odio, eu pellentesque nulla faucibus interdum. Duis ex neque, maximus non suscipit vel, fermentum vel tellus. Pellentesque ut aliquet mauris, molestie varius tortor. Sed ac justo lacinia, vestibulum nisi sit amet, ultrices ex. Curabitur at sagittis est. Maecenas interdum condimentum risus, a tristique massa mattis quis. Sed at turpis porta, accumsan est ac, consequat purus. Aenean molestie ipsum fermentum, placerat diam at, finibus quam. Fusce mattis eu nisl elementum mattis. </p>
+                                        </div>
                                     </div>    
                                 </div>
                         </div>
