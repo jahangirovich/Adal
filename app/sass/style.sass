@@ -11,6 +11,8 @@
 @import 'generatetour'
 
 // GLOBAL
+.hide_for_dt
+    display: none
 
 html
     box-sizing: border-box
@@ -282,6 +284,20 @@ h1,h2,h3,h4,h5,h6
 
  
 @media (max-width: 768px)
+    .header
+        padding: 0 20px
+
+    .hide_for_mb
+        display: none
+
+    .hide_for_dt
+        display: block 
+        padding-left: 20px
+        padding-top: 16px
+
+    .main 
+        height: auto
+
     .header__call
         display: none 
 
@@ -293,3 +309,32 @@ h1,h2,h3,h4,h5,h6
 
     .container 
         padding: 0
+
+    .about_inner2
+        padding: 0
+
+    .title
+        padding-top: 20px
+
+    .search__items
+        display: block 
+
+    .search__item
+        width: auto
+        height: 100px
+        margin: 0 20px
+
+    .search__item-box
+        width: auto
+
+    .search__item+.search__item
+        width: auto
+        height: 100px
+        margin: 0 20px
+
+    .search__item-box2
+        border-left: none
+
+    .search__button
+        width: auto
+        margin-bottom: 40px
