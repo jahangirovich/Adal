@@ -9,6 +9,7 @@
 .generate 
 	&_inner 
 	&_header 
+		display: flex
 		padding-top: 20px
 	&_header_nav 
 		h1 
@@ -84,6 +85,7 @@
 	&_content 
 		padding: 40px 0
 	&_content_inner 
+		margin-right: 10px
 		&.grid-rows-3
 			grid-template-rows: 160px 360px 180px
 	&_operator 
@@ -148,7 +150,7 @@
 			z-index: 5
 
 			.hidden_block_rating
-				opacity: 1
+				display: block
 
 			hr 
 				display: block
@@ -212,7 +214,7 @@
 			height: 120%
 
 			.hidden_block_hotel
-				opacity: 1
+				display: block
 
 			hr 
 				opacity: .5
@@ -268,7 +270,7 @@
 			height: 160%
 
 			.hidden_block_hotel
-				opacity: 1
+				display: flex
 
 			hr 
 				opacity: .5
@@ -306,7 +308,7 @@
 			height: 145%
 
 			.hidden_block_hotel
-				opacity: 1
+				display: flex
 
 		&_inner 
 			padding: 20px
@@ -434,10 +436,10 @@
 			grid-template-rows: 170px 180px 180px 170px
 
 .hidden_block_rating
-	display: flex
-	opacity: 0
+	display: none
+
 .hidden_block_hotel
-	opacity: 0
+	display: none
 
 	.hotel_price
 		padding-top: 5px
@@ -453,6 +455,9 @@
 			line-height: 12px
 			color: #14141A
 			padding-top: 8px
+
+.generate_content_inner2
+	margin-left: 10px
 
 
 .generate 
@@ -490,7 +495,6 @@
 
 			a 
 				color: #fff
-
 	&_empty_content 
 		text-align: center
 		padding-top: 160px
@@ -551,6 +555,9 @@
 		background: #14141A
 		border: none
 	&_comments_mycomment_btn 
+		align-items: center
+		text-align: center
+
 		a 
 			color: #fff
 			font-size: 16px
@@ -596,3 +603,37 @@
 		margin-top: 10px
 	&_comments_pastcomments_answer 
 		margin-left: 50px
+
+.generate_stuff:last-child
+	margin-left: 20px
+
+@media screen and (max-width: 767px)
+	.generate_rating
+		margin-left: 0
+
+	.generate_header
+		display: block
+
+	.generate_header_budget
+		margin-left: 20px
+
+	.generate_content.grid
+		display: block
+
+	.generate_content_inner2
+		margin-left: 0
+		margin: 20px 20px 0 20px
+
+	.generate_content_inner 
+		margin-right: 0
+		margin: 20px 20px 0 20px
+
+	.generate_rating
+		margin-top: 20px
+
+	.generate_stuff:last-child
+		margin-left: 0
+		margin-top: 20px
+
+	.generate_empty_header
+		padding: 40px 20px 0 20px
