@@ -180,7 +180,7 @@
 
                                     <div class="generate_rating w-1/2 phone:w-full">
                                         <div class="generate_rating_inner">
-                                            <div style="justify-content: space-between;" class="generate_rating_heading flex">
+                                            <div style="justify-content: space-between;" class="generate_rating_heading">
                                                 <div style="margin-left: -12px" class="flex">
                                                     <img src="./img/calendarB.svg">
                                                     <div>
@@ -196,14 +196,14 @@
                                             <p>Даты тура</p>
                                             <h6><strong>25 мар 2021 &#8594; 1 апр 2021</strong></h6>
                                             <hr>
-                                            <div style="border: 1px solid #F5F5F7; background-color: #F5F5F7; padding: 10px 0;" class="hidden_block_rating flex">
+                                            <div style="border: 1px solid #F5F5F7; background-color: #F5F5F7; padding: 10px 0;" class="hidden_block_rating">
                                                 <img style="padding-left: 55px;" src="./img/calendarO.svg"><a style="padding-left: 5px; color: #FF7733;" href="#">Другие даты тура</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="generate_hotel">
-                                    <div class="generate_hotel_inner grid grid-flow-col grid-cols-2">
+                                    <div class="generate_hotel_inner grid grid-flow-col grid-cols-2 phone:block">
                                         <img style="padding-top: 2px;" src="./img/hotel.svg">
                                         <div style="padding-left: 15px; padding-right: 20px;">
                                             <div class="generate_hotel_heading flex">
@@ -231,7 +231,7 @@
 
                                     </div>
                                     <hr style="margin: 10px 20px;">
-                                    <div style="justify-content: space-between;" class="hidden_block_hotel flex">
+                                    <div style="justify-content: space-between;" class="hidden_block_hotel">
                                         <div style="padding-left: 15px; display: block;" class="hotel_price"><span>Cтоимость</span><p>122 587₸</p></div>
                                         <div class="hotel_nav flex">
                                             <div style="height: 50px; margin-top: 8px; margin-right: 10px; border: 1px solid #F5F5F7; background-color:#F5F5F7; padding: 10px; border-radius: 5px;" class="hotel_change flex"><img style="height: 30px;" src="./img/create.svg"><span style="padding-top: 2px; color: #FF7733;">Изменить</span></div>
@@ -258,8 +258,8 @@
                                             </div>
                                         </div>
                                         <hr style="margin: 10px 20px;">
-                                    <div class="hidden_block_hotel">
-                                        <div style="padding-left: 20px; justify-content: space-between; display: block;" class="hotel_price flex"><span>Cтоимость</span><p style="margin-top:-10px; padding-right: 20px;">122 587₸</p></div>
+                                    <div class="hidden_block_stuff">
+                                        <div style="padding-left: 20px; justify-content: space-between;" class="hotel_price"><span>Cтоимость</span><p style="margin-top:-10px; padding-right: 20px;">122 587₸</p></div>
                                         <div style="justify-content: space-between;" class="hotel_nav flex">
                                             <div style="height: 50px; margin-left: 20px; border: 1px solid #F5F5F7; background-color:#F5F5F7; padding: 10px 50px; border-radius: 5px;" class="hotel_change flex"><img style="height: 30px;" src="./img/create.svg"><span style="padding-top: 2px; color: #FF7733;">Изменить</span></div>
                                             <img style="padding-right: 20px;" src="./img/off.svg">
@@ -285,8 +285,8 @@
                                             </div>
                                         </div>
                                         <hr style="margin: 10px 20px;">
-                                    <div class="hidden_block_hotel">
-                                        <div style="padding-left: 20px; justify-content: space-between; display: block;" class="hotel_price flex"><span>Cтоимость</span><p style="margin-top:-10px; padding-right: 20px;">122 587₸</p></div>
+                                    <div class="hidden_block_stuff">
+                                        <div style="padding-left: 20px; justify-content: space-between;" class="hotel_price"><span>Cтоимость</span><p style="margin-top:-10px; padding-right: 20px;">122 587₸</p></div>
                                         <div style="justify-content: space-between;" class="hotel_nav flex">
                                             <div style="height: 50px; margin-left: 20px; border: 1px solid #F5F5F7; background-color:#F5F5F7; padding: 10px 50px; border-radius: 5px;" class="hotel_change flex"><img style="height: 30px;" src="./img/create.svg"><span style="padding-top: 2px; color: #FF7733;">Изменить</span></div>
                                             <img style="padding-right: 20px;" src="./img/off.svg">
@@ -301,20 +301,23 @@
                                 
 
             
-                                <div style="margin-bottom: 10px;" class="generate_ticket">
+                                <div style="margin-bottom: 10px;" class="generate_ticket ticket1">
                                     <div class="generate_ticket_inner">
-                                        <div class="generate_ticket_heading flex">
+                                        <div class="generate_ticket_heading">
                                             <img src="./img/avialogo.svg">
                                             <div class="generate_ticket_name">
-                                                <span>Алматы - Денпасар</span>
-                                                <div class="flex">
-                                                    <h2>DV-731</h2>
-                                                    <p>/ Эконом-класс</p>
+                                                <img class="hide_for_dt" src="./img/alogo-mb.svg" alt="">
+                                                <div class="block">
+                                                    <span>Алматы - Денпасар</span>
+                                                    <div class="flex">
+                                                        <h2>DV-731</h2>
+                                                        <p>/ Эконом-класс</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="ticket_weight">
-                                                <div class="flex"><span>Ручная кладь: 5 кг</span><img src="./img/briefcase.svg"></div>
-                                                <div class="flex"><span>Багаж: 20 кг</span><img src="./img/luggage.svg"></div>
+                                                <div class="flex"><span><nobr>Ручная кладь: 5 кг</nobr></span><img src="./img/briefcase.svg"></div>
+                                                <div class="flex"><span><nobr>Багаж: 20 кг</nobr></span><img src="./img/luggage.svg"></div>
                                             </div>
                                         </div>
                                         <div class="generate_ticket_bottom flex">
@@ -324,7 +327,7 @@
                                             </div>
                                             <div class="flex">
                                                 <div>
-                                                    <img src="./img/line.svg">
+                                                    <img class="phone:w-1/2" src="./img/line.svg">
                                                     <h4>ALA</h4>
                                                 </div>
                                                 <div class="generate_ticket_direct">
@@ -346,7 +349,7 @@
                                         </div>
                                     </div>
                                     <hr style="margin: 0 20px;">
-                                    <div style="justify-content: space-between;" class="hidden_block_hotel flex">
+                                    <div style="justify-content: space-between;" class="hidden_block_hotel">
                                         <div style="padding-left: 15px; display: block;" class="hotel_price"><span>Cтоимость</span><p>122 587₸</p></div>
                                         <div class="hotel_nav flex">
                                             <div style="height: 50px; margin-top: 8px; margin-right: 10px; border: 1px solid #F5F5F7; background-color:#F5F5F7; padding: 10px; border-radius: 5px;" class="hotel_change flex"><img style="height: 30px;" src="./img/create.svg"><span style="padding-top: 2px; color: #FF7733;">Изменить</span></div>
@@ -400,7 +403,7 @@
                                         </div>
                                     </div>
                                     <hr style="margin: 0 20px;">
-                                    <div style="justify-content: space-between;" class="hidden_block_hotel flex">
+                                    <div style="justify-content: space-between;" class="hidden_block_hotel">
                                         <div style="padding-left: 15px; display: block;" class="hotel_price"><span>Cтоимость</span><p>122 587₸</p></div>
                                         <div class="hotel_nav flex">
                                             <div style="height: 50px; margin-top: 8px; margin-right: 10px; border: 1px solid #F5F5F7; background-color:#F5F5F7; padding: 10px; border-radius: 5px;" class="hotel_change flex"><img style="height: 30px;" src="./img/create.svg"><span style="padding-top: 2px; color: #FF7733;">Изменить</span></div>
@@ -428,8 +431,8 @@
                                             </div>
                                         </div>
                                         <hr style="margin: 10px 20px;">
-                                    <div class="hidden_block_hotel flex">
-                                        <div style="padding-left: 20px; justify-content: space-between;" class="hotel_price flex"><span>Cтоимость</span><p style="margin-top:-10px; padding-right: 20px; display: block;">122 587₸</p></div>
+                                    <div class="hidden_block_stuff">
+                                        <div style="padding-left: 20px; justify-content: space-between;" class="hotel_price"><span>Cтоимость</span><p style="margin-top:-10px; padding-right: 20px;">122 587₸</p></div>
                                         <div style="justify-content: space-between;" class="hotel_nav flex">
                                             <div style="height: 50px; margin-left: 20px; border: 1px solid #F5F5F7; background-color:#F5F5F7; padding: 10px 50px; border-radius: 5px;" class="hotel_change flex"><img style="height: 30px;" src="./img/create.svg"><span style="padding-top: 2px; color: #FF7733;">Изменить</span></div>
                                             <img style="padding-right: 20px;" src="./img/off.svg">
@@ -455,8 +458,8 @@
                                             </div>
                                         </div>
                                         <hr style="margin: 10px 20px;">
-                                    <div class="hidden_block_hotel">
-                                        <div style="padding-left: 20px; justify-content: space-between;" class="hotel_price flex"><span>Cтоимость</span><p style="margin-top:-10px; padding-right: 20px;">122 587₸</p></div>
+                                    <div class="hidden_block_stuff">
+                                        <div style="padding-left: 20px; justify-content: space-between;" class="hotel_price"><span>Cтоимость</span><p style="margin-top:-10px; padding-right: 20px;">122 587₸</p></div>
                                         <div style="justify-content: space-between;" class="hotel_nav flex">
                                             <div style="height: 50px; margin-left: 20px; border: 1px solid #F5F5F7; background-color:#F5F5F7; padding: 10px 50px; border-radius: 5px;" class="hotel_change flex"><img style="height: 30px;" src="./img/create.svg"><span style="padding-top: 2px; color: #FF7733;">Изменить</span></div>
                                             <img style="padding-right: 20px;" src="./img/off.svg">
