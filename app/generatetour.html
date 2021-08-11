@@ -128,10 +128,10 @@
                                         <img src="./img/generate_arrow.svg">
                                         <a href="#">Назад</a>
                                     </div>
-                                    <img src="./img/divider_g.svg">
+                                    <img class="hide_for_mb" src="./img/divider_g.svg">
                                     <div class="generate_favourite">
                                         <img src="./img/heart.svg">
-                                        <span>В избранное</span>
+                                        <span class="hide_for_mb">В избранное</span>
                                     </div>
                                 </div>
                             </div>
@@ -151,11 +151,22 @@
                             </div>
                         </div>
 
-                        <div class="generate_header_btn">
-                            <a href="#">Перейти к оплате</a>
+                        <div class="generate_header_budget hide_for_dt">
+                            <div class="inline-block nobg">
+                                <div class="flex">
+                                    <img style="margin-left: -18px;" src="./img/time.svg">
+                                    <div>Открыть маршрутный лист</div>
+                                    <img src="./img/g_arrow.svg">
+                                </div>
+                            </div>
                         </div>
 
+                        <button class="generate_header_btn">Перейти к оплате</button>
+
+
+
                     </div>
+                    <hr style="margin: 20px; height: 2px; background-color: gray;">
                     <div class="generate_content grid grid-flow-col grid-cols-2">
 
                             <div class="generate_content_inner grid grid-flow-col grid-cols-1 grid-rows-3 gap-4 phone:block">
@@ -338,7 +349,7 @@
                                                     <span>Без пересадок</span>
                                                 </div>
                                                 <div>
-                                                    <img src="./img/line.svg">
+                                                    <img class="phone:w-1/2" src="./img/line.svg">
                                                     <h4 style="text-align: right;">DEN</h4>
                                                 </div>
                                             </div>
@@ -381,7 +392,7 @@
                                             </div>
                                             <div class="flex">
                                                 <div>
-                                                    <img src="./img/line.svg">
+                                                    <img class="phone:w-1/2" src="./img/line.svg">
                                                     <h4>ALA</h4>
                                                 </div>
                                                 <div class="generate_ticket_direct">
@@ -392,7 +403,7 @@
                                                     <span>Без пересадок</span>
                                                 </div>
                                                 <div>
-                                                    <img src="./img/line.svg">
+                                                    <img  src="./img/line.svg">
                                                     <h4 style="text-align: right;">DEN</h4>
                                                 </div>
                                             </div>
