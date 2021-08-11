@@ -75,6 +75,9 @@ h1,h2,h3,h4,h5,h6
     display: flex
     justify-content: center
     align-items: center
+    transition: 0.3s
+    &:hover
+        opacity: 0.89
 
 .header
     &__inner
@@ -86,10 +89,10 @@ h1,h2,h3,h4,h5,h6
     &__burger
         cursor: pointer
         img
-            width: 40px
-            height: 40px
+            width: 30px
+            height: 30px
     &__burger-close
-        width: 22px
+        width: 16px
         img
             width: 100%
     &__logo
@@ -133,27 +136,30 @@ h1,h2,h3,h4,h5,h6
         width: 66px !important
 
 .burger-open
-    transition: 0.4s
-    left: 0 !important
+    transition: 0.5s
+    backdrop-filter: blur(35px) !important
+    opacity: 1 !important
+    z-index: 10 !important
 
 .burger-menu
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) !important
     position: absolute
     top: 0
-    left: -100%
+    left: 0
     right: 0
     bottom: 0
     overflow-y: hidden
     overflow-x: hidden
     height: 100vh
-    z-index: 10
-    transition: 0.4s
-    backdrop-filter: blur(35px)
     width: 100%
+    z-index: -11111111111
+    transition: 0.5s
+    backdrop-filter: blur(0px)
     background-repeat: no-repeat
     background-size: cover
     background-position: center center
     display: flex
+    opacity: 0
     flex-direction: column
     justify-content: space-between
     .title
@@ -278,11 +284,10 @@ h1,h2,h3,h4,h5,h6
         & + .footer__link
             margin-left: 22px
 
-@media (max-width: 1200px) 
-  .container 
-    max-width: 100%
+@media (max-width: 1200px)
+    .container
+        max-width: 100%
 
- 
 @media (max-width: 768px)
     .header
         padding: 0 20px
@@ -290,27 +295,40 @@ h1,h2,h3,h4,h5,h6
     .hide_for_mb
         display: none
 
+    .burger__items
+        flex-wrap: wrap
+        padding: 15px
+
+    .search__button
+        width: 90% !important
+
+    .burger__item
+        width: 48% !important
+
     .hide_for_dt
-        display: block 
+        display: block
         padding-left: 20px
         padding-top: 16px
 
-    .main 
+    .main
         height: auto
 
     .header__account
         background: none
 
     .header__call
-        display: none 
+        display: none
 
     .header__languages
-        display: none 
+        display: none
 
     .main__container
-        height: auto 
+        height: auto
 
-    .container 
+    .search__button
+        width: 90%
+
+    .container
         padding: 0
 
     .about_inner2
@@ -324,7 +342,7 @@ h1,h2,h3,h4,h5,h6
         font-size: 1rem
 
     .search__items
-        display: block 
+        display: block
 
     .search__item
         width: auto
@@ -341,6 +359,9 @@ h1,h2,h3,h4,h5,h6
 
     .search__item-box2
         border-left: none
+
+    .search__1-icon
+        top: 18px
 
     .search__button
         width: auto
