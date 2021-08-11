@@ -77,7 +77,7 @@ h1,h2,h3,h4,h5,h6
     align-items: center
     transition: 0.3s
     &:hover
-        opacity: 0.89
+        opacity: 0.7
 
 .header
     &__inner
@@ -307,14 +307,12 @@ h1,h2,h3,h4,h5,h6
 
     .hide_for_dt
         display: block
-        padding-left: 20px
-        padding-top: 16px
-
     .main
         height: auto
 
     .header__account
         background: none
+        border: none
 
     .header__call
         display: none
@@ -367,3 +365,60 @@ h1,h2,h3,h4,h5,h6
         width: auto
         margin-bottom: 40px
         padding: 20px
+
+    .header__burger-close
+        width: 26px
+
+    .burger-menu.burger-open
+        justify-content: unset
+        height: auto
+        max-height: 100000px
+
+    .burger-menu .title+.title
+        margin-top: 0
+
+    .burger__items
+        margin-top: 20px
+        margin-bottom: auto
+
+        .burger__item
+            .burger__link
+                font-size: 16px
+                font-weight: 400
+
+    .burger-menu .title
+        font-size: 20px
+        line-height: 24px
+        font-weight: 400
+
+    .burger-menu .title:first-child
+        color: #FF7733
+
+    .burger-menu .header__languages
+        width: 80%
+        margin: 0 10%
+
+        .header__language
+            width: 50% !important
+            &:first-child
+                margin-right: 5px
+
+            &:last-child
+                margin-left: 5px
+
+    .burger-menu .main__inner .header__account
+        background: rgba(255, 255, 255, 0.1)
+        border: 1px solid rgba(255, 255, 255, 0.3)
+        width: 80%
+        margin: 0 10%
+        margin-top: 10px
+
+    .burger_nav_mb
+        margin-top: 20px
+
+    .burger__copyrite
+        text-align: center
+        font-size: 12px
+        line-height: 12px
+        color: #fff
+        margin-top: 20px
