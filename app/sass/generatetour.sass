@@ -1,6 +1,7 @@
 .main_generate
 	background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../img/background-image.png)
-	height: 100vh
+	height: auto
+	overflow-y: scroll
 	width: 100%
 	background-repeat: no-repeat
 	background-size: cover
@@ -494,6 +495,9 @@
 
 .generate
 	&_empty
+		background: #14141A
+		height: 100vh
+		overflow-y: scroll
 		.main__container
 			display: block
 			flex-direction: unset
@@ -515,7 +519,7 @@
 		display: flex
 		justify-content: space-between
 		padding-top: 25px
-
+		margin-bottom: 17px
 		button
 			background-color: #1F1F26
 			border: 1px solid #1F1F26
@@ -544,7 +548,7 @@
 			border-radius: 5px
 			margin: 0 auto
 			margin-top: 10px
-			padding: 10px
+			padding: 10px 25px
 
 			img
 				width: 20px
@@ -559,13 +563,13 @@
 .generate
 	&_comments
 		display: flex
+		align-items: flex-start
 		padding-top: 25px
 	&_comments_mycomment
 		width: 30%
 		background: #1F1F26
 		border-radius: 10px
 		margin-right: 10px
-		height: 368px
 	&_comments_mycomment_inner
 		text-align: center
 		padding: 18px 20px
@@ -593,9 +597,10 @@
 		a
 			color: #fff
 			font-size: 16px
-			line-height: 12px
-			vertical-align: middle !important
-
+			width: 100%
+			display: flex
+			align-items: center
+			justify-content: center
 			border: 1px solid #FF7733
 			background: #FF7733
 			border-radius: 5px
@@ -764,8 +769,6 @@
 
 	.generate_add
 		height: 180px
-<<<<<<< HEAD
-=======
 
 	.generate_comments
 		display: block
@@ -779,4 +782,3 @@
 
 	.generate_empty_content
 		padding-top: 100px
->>>>>>> 1688e4f88d81c69747370b66ae36768ce8583f0c
