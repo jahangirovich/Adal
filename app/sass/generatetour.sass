@@ -9,6 +9,7 @@
 .generate 
 	&_inner 
 	&_header 
+		display: flex
 		padding-top: 20px
 	&_header_nav 
 		h1 
@@ -84,6 +85,7 @@
 	&_content 
 		padding: 40px 0
 	&_content_inner 
+		margin-right: 10px
 		&.grid-rows-3
 			grid-template-rows: 160px 360px 180px
 	&_operator 
@@ -144,11 +146,11 @@
 		&:hover
 			transform: scale(1.05)
 			background: white
-			height: 140%
+			height: 155%
 			z-index: 5
 
 			.hidden_block_rating
-				opacity: 1
+				display: block
 
 			hr 
 				display: block
@@ -212,7 +214,7 @@
 			height: 120%
 
 			.hidden_block_hotel
-				opacity: 1
+				display: flex
 
 			hr 
 				opacity: .5
@@ -267,8 +269,8 @@
 			background: white
 			height: 160%
 
-			.hidden_block_hotel
-				opacity: 1
+			.hidden_block_stuff
+				display: block
 
 			hr 
 				opacity: .5
@@ -292,6 +294,25 @@
 			img 
 				padding-left: 10px
 
+.hidden_block_stuff
+	display: none
+
+	.hotel_price
+		padding-top: 5px
+		display: flex
+
+		span 
+			color: #72727E
+			font-size: 14px
+			line-height: 14px
+
+		p 
+			font-weight: 700
+			font-size: 16px
+			line-height: 12px
+			color: #14141A
+			padding-top: 8px	
+
 .generate 
 	&_ticket 
 		background: #F8F8F8B2
@@ -300,17 +321,24 @@
 		height: all
 		transition: all 0.1s
 
+		hr 
+			display: none
+
 		&:hover
 			transform: scale(1.05)
 			background: white
-			height: 145%
+			height: 140%
 
 			.hidden_block_hotel
-				opacity: 1
+				display: flex
+
+			hr 
+				display: block
 
 		&_inner 
 			padding: 20px
 	&_ticket_heading 
+		display: flex
 		img 
 			margin-top: -8px
 	&_ticket_name 
@@ -412,6 +440,10 @@
 			line-height: 12px
 			padding-top: 12px
 
+.generate_ticket.ticket1
+
+	&:hover
+		height: 150%
 .ticket_weight
 	padding-left: 100px
 
@@ -434,10 +466,10 @@
 			grid-template-rows: 170px 180px 180px 170px
 
 .hidden_block_rating
-	display: flex
-	opacity: 0
+	display: none
+
 .hidden_block_hotel
-	opacity: 0
+	display: none
 
 	.hotel_price
 		padding-top: 5px
@@ -453,6 +485,9 @@
 			line-height: 12px
 			color: #14141A
 			padding-top: 8px
+
+.generate_content_inner2
+	margin-left: 10px
 
 
 .generate 
@@ -490,7 +525,6 @@
 
 			a 
 				color: #fff
-
 	&_empty_content 
 		text-align: center
 		padding-top: 160px
@@ -551,6 +585,9 @@
 		background: #14141A
 		border: none
 	&_comments_mycomment_btn 
+		align-items: center
+		text-align: center
+
 		a 
 			color: #fff
 			font-size: 16px
@@ -596,3 +633,92 @@
 		margin-top: 10px
 	&_comments_pastcomments_answer 
 		margin-left: 50px
+
+.generate_stuff:last-child
+	margin-left: 20px
+
+@media screen and (max-width: 767px)
+	.generate_rating
+		margin-left: 0
+
+	.generate_header
+		display: block
+
+	.generate_header_budget
+		margin-left: 20px
+
+	.generate_content.grid
+		display: block
+
+	.generate_content_inner2
+		margin-left: 0
+		margin: 20px 20px 0 20px
+
+	.generate_content_inner 
+		margin-right: 0
+		margin: 20px 20px 0 20px
+
+	.generate_rating
+		margin-top: 20px
+
+	.generate_stuff:last-child
+		margin-left: 0
+		margin-top: 20px
+
+	.generate_empty_header
+		padding: 40px 20px 0 20px
+
+	.generate_ticket_heading 
+		display: block 
+
+		img 
+			display: none
+
+	.generate_ticket_name
+		display: flex
+		padding-left: 0
+		img 
+			display: block
+
+		.block 
+			padding-left: 20px
+
+	.ticket_weight
+		display: flex
+		padding-left: 0
+
+		span 
+			order: 2
+
+		img 
+			order: 1
+
+		.flex 
+			padding: 0
+
+	.ticket_weight .flex:first-child
+		padding: 0
+
+	.ticket_weight .flex:last-child
+		padding-left: 25px
+
+	.generate_hotel_inner>img 
+		width: 100%
+		padding-right: 5px
+
+	.generate_hotel_stuff 
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		padding-left: 17.5px
+		&>div
+			display: flex
+			align-items: center
+			&>img
+				width: 15px
+				height: 15px
+			&:nth-child(even)
+				width: 50%
+
+	.generate_add
+		height: 180px
