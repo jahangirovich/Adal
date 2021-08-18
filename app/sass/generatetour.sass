@@ -1,64 +1,68 @@
 .main_generate
 	background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../img/background-image.png)
-    height: 100vh
-    width: 100%
-    background-repeat: no-repeat
-    background-size: cover
-    background-position: center center
+	height: auto
+	overflow-y: scroll
+	width: 100%
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
 
-.generate 
-	&_inner 
-	&_header 
+.generate
+	&_inner
+	&_header
 		display: flex
 		padding-top: 20px
-	&_header_nav 
-		h1 
+	&_header_nav
+		margin-right: auto
+		h1
 			color: #FFFFFF
 			font-size: 36px
 			line-height: 36px
 	&_header_back
-		img 
-			padding-right: 13px 
+		img
+			padding-right: 13px
 			padding-bottom: 5px
 
-		a 
+		a
 			text-decoration: none
 			color: #FFFFFFCC
 			font-size: 14px
 			padding-right: 20px
 
 	&_favourite
-		img 
+		img
 			padding-left: 8px
 			padding-right: 8px
 			cursor: pointer
 
-		span 
+		span
 			color: #FFFFFFCC
 			font-size: 14px
-	&_header_budget 
+	&_header_budget
 		width: 280px
-		height: 60px
 		overflow: hidden
 		background-color: #F8F8F8B2
 		border-radius: 5px
-		margin-left: 410px
-		.flex
+		margin-right: 20px
+		.inline-block
 			background-color: #F8F8F8B2
-			padding-bottom: 30px
+			height: 100%
+			.flex
+				align-items: center
+				height: 100%
+				div
+					margin-right: auto
+				span
+					color: #42424E
+					font-size: 14px
+					line-height: 14px
 
-			span 
-				color: #42424E
-				font-size: 14px
-				line-height: 14px
-				padding-top: 12px
+				p
+					color: #2B2B34
+					font-size: 16px
+					line-height: 12px
 
-			p 
-				color: #2B2B34
-				font-size: 16px
-				line-height: 12px
-
-		img 
+		img
 			margin-top: 2px
 			padding-left: 15px
 			padding-right: 10px
@@ -69,33 +73,33 @@
 			padding-right: 4px
 	&_header_btn
 		padding-top: 15px
-		padding-left: 10px
 
-		a 
-			text-decoration: none
-			color: #FFFFFF
-			font-size: 20px
-			border: 1px solid #ED6F2F
-			padding: 16px 30px
-			background-color: #ED6F2F
-			border-radius: 5px
-			margin: 0
+		text-decoration: none
+		color: #FFFFFF
+		font-size: 20px
+		border: 1px solid #ED6F2F
 
-.generate 
-	&_content 
+		padding: 10px 30px
+		background-color: #ED6F2F
+		border-radius: 5px
+		margin: 0
+
+.generate
+	&_content
 		padding: 40px 0
-	&_content_inner 
+	&_content_inner
 		margin-right: 10px
 		&.grid-rows-3
 			grid-template-rows: 160px 360px 180px
-	&_operator 
+	&_operator
 		background: #F8F8F8B2
 		border-radius: 5px
 		cursor: pointer
 		transition: 0.1s all
+		margin-right: 10px
 		height: 100%
 
-		a 
+		a
 			opacity: 0
 			transition: 0.1s all
 			font-size: 14px
@@ -113,22 +117,22 @@
 			a
 				opacity: 1
 
-		span, p, img 
-			padding: 0 
+		span, p, img
+			padding: 0
 			margin: 0
-			margin-top: 4px	
-	&_operator_inner 
+			margin-top: 4px
+	&_operator_inner
 		padding: 23px 20px 14px 20px
 
-		h6 
+		h6
 			color: #2B2B34
 			font-family: sans-serif
 			font-size: 14px
-			line-height: 20px	
+			line-height: 20px
 			padding-top: 20px
 
-	&_operator_heading 
-		div 	
+	&_operator_heading
+		div
 			padding-left: 12px
 
 		span
@@ -136,13 +140,18 @@
 			font-size: 14px
 			line-height: 14px
 
-		p 
+		p
 			color: #1F1F26
 			font-weight: 500
 			font-size: 14px
 			line-height: 14px
-		
-	&_rating 
+
+	&_rating
+		background: #F8F8F8B2
+		margin-left: 10px
+		border-radius: 5px
+		cursor: pointer
+		transition: 0.1s all
 		&:hover
 			transform: scale(1.05)
 			background: white
@@ -152,45 +161,45 @@
 			.hidden_block_rating
 				display: block
 
-			hr 
+			hr
 				display: block
 
-		hr 
+		hr
 			display: none
 
-		background: #F8F8F8B2
-		height: 100%
-		border-radius: 5px
-		transition: 0.1s all
-		margin-left: 20px
-		cursor: pointer
+			background: #F8F8F8B2
+			height: 100%
+			border-radius: 5px
+			transition: 0.1s all
+			margin-left: 20px
+			cursor: pointer
 
-		span, p, img 
-			padding: 0 
+		span, p, img
+			padding: 0
 			margin: 0
-	&_rating_inner 
+	&_rating_inner
 		padding: 23px 23px 18px 21px
 
-		p 
+		p
 			color: #42424E
 			font-size: 14px
 			line-height: 14px
 			padding-top: 20px
 
-		h6 	
+		h6
 			font-size: 18px
 			line-height: 18px
 			color: #14141A
 			padding-top: 14px
-	&_rating_heading 
-		div 	
+	&_rating_heading
+		div
 			padding-left: 12px
 
 		span
 			color: #42424E
 			font-size: 14px
 			line-height: 14px
-	&_hotel 
+	&_hotel
 		background: #F8F8F8B2
 		height: 94.5%
 		margin-top: 20px
@@ -198,13 +207,13 @@
 		transition: 0.3s all
 		cursor: pointer
 
-		span 
+		span
 			padding-left: 7px
 
-		p 
+		p
 			padding-left: 7px
 
-		hr 
+		hr
 			opacity: 0
 			transition: all 0.1s
 
@@ -216,32 +225,32 @@
 			.hidden_block_hotel
 				display: flex
 
-			hr 
+			hr
 				opacity: .5
-	&_hotel_inner 
+	&_hotel_inner
 		padding: 5px 0 2px 5px
 
 		div
-			hr 
+			hr
 				margin-left: 17.5px
 
-	&_hotel_heading 
+	&_hotel_heading
 		padding-left: 17.5px
 
-		span 
+		span
 			color: #2B2B34
 			font-size: 14px
 			line-height: 14px
 			padding-top: 12px
 
-		p 	
+		p
 			color: #14141A
 			font-size: 14px
 			line-height: 14px
-	&_hotel_rating 
+	&_hotel_rating
 		padding-left: 17.5px
 
-		h1 
+		h1
 			color: #14141A
 			font-size: 20px
 			line-height: 20px
@@ -251,17 +260,18 @@
 		.flex
 			padding-top: 5px
 
-	&_hotel_stuff 
+	&_hotel_stuff
 		padding-left: 17.5px
 
-	&_stuff 
+	&_stuff
 		background: #F8F8F8B2
 		border-radius: 5px
 		cursor: pointer
 		transition: 0.1s all
 		height: 100%
-
-		hr 
+		overflow-y: scroll
+		padding-bottom: 10px
+		hr
 			opacity: 0
 
 		&:hover
@@ -272,26 +282,26 @@
 			.hidden_block_stuff
 				display: block
 
-			hr 
+			hr
 				opacity: .5
-	&_stuff_inner 
+	&_stuff_inner
 		padding: 0 20px
 	&_stuff_heading
-		div 
+		div
 			padding-left: 13px
 
-		span 
+		span
 			padding-top: 12px
 	&_stuff_bottom
-		div 	
+		div
 			padding-left: 13px
-			
-		padding-top: 20px
 
-		.flex 
+			padding-top: 20px
+
+		.flex
 			margin-left: -23px
 
-			img 
+			img
 				padding-left: 10px
 
 .hidden_block_stuff
@@ -301,27 +311,27 @@
 		padding-top: 5px
 		display: flex
 
-		span 
+		span
 			color: #72727E
 			font-size: 14px
 			line-height: 14px
 
-		p 
+		p
 			font-weight: 700
 			font-size: 16px
 			line-height: 12px
 			color: #14141A
-			padding-top: 8px	
+			padding-top: 8px
 
-.generate 
-	&_ticket 
+.generate
+	&_ticket
 		background: #F8F8F8B2
 		border-radius: 5px
 		cursor: pointer
 		height: all
 		transition: all 0.1s
 
-		hr 
+		hr
 			display: none
 
 		&:hover
@@ -332,39 +342,39 @@
 			.hidden_block_hotel
 				display: flex
 
-			hr 
+			hr
 				display: block
 
-		&_inner 
+		&_inner
 			padding: 20px
-	&_ticket_heading 
+	&_ticket_heading
 		display: flex
-		img 
+		img
 			margin-top: -8px
-	&_ticket_name 
+	&_ticket_name
 		padding-left: 15px
 
-		span 
+		span
 			color: #2B2B34
 			font-size: 14px
 			line-height: 14px
 
-		h2 
+		h2
 			color: #14141A
 			font-size: 20px
 			line-height: 20px
 
-		p 
+		p
 			color: #42424E
 			font-size: 14px
 			line-height: 14px
 			padding-top: 5px
-	&_ticket_bottom 
+	&_ticket_bottom
 		justify-content: space-between
 		padding-top: 16px
 
 		.ticket-date
-			p 
+			p
 				font-weight: 700
 				font-size: 16px
 				line-height: 16px
@@ -372,14 +382,14 @@
 				padding-top: 8px
 				text-align-last: left
 
-			span 
+			span
 				color: #42424E
 				font-size: 12px
 				line-height: 12px
 				vertical-align: top
 
 		.ticket-date_right
-			p 
+			p
 				font-weight: 700
 				font-size: 16px
 				line-height: 16px
@@ -387,13 +397,13 @@
 				padding-top: 8px
 				text-align: right
 
-			span 
+			span
 				color: #42424E
 				font-size: 12px
 				line-height: 12px
 				vertical-align: top
 
-		h4 
+		h4
 			color: #42424E
 			font-size: 10px
 			line-height: 10px
@@ -403,17 +413,17 @@
 	&_ticket_direct
 		padding: 0 10px
 
-		img 
+		img
 			margin-top: -7px
 
-		p 
+		p
 			color: #42424E
 			font-size: 12px
 			line-height: 12px
 			padding-top: 8px
 			padding-left: 5px
 
-		span 
+		span
 			color: #595966
 			font-size: 12px
 			line-height: 12px
@@ -434,7 +444,7 @@
 		text-align: center
 		padding-top: 15%
 
-		p 	
+		p
 			color: #42424E
 			font-size: 16px
 			line-height: 12px
@@ -447,7 +457,7 @@
 .ticket_weight
 	padding-left: 100px
 
-	span 
+	span
 		color: #2B2B34
 		font-size: 14px
 		line-height: 14px
@@ -458,12 +468,12 @@
 	.flex:first-child
 		padding-top: 3px
 
-	img 
+	img
 		margin-top: 0
 
 .generate_content_inner2
 	&.grid-rows-4
-			grid-template-rows: 170px 180px 180px 170px
+		grid-template-rows: 170px 180px 180px 170px
 
 .hidden_block_rating
 	display: none
@@ -474,12 +484,12 @@
 	.hotel_price
 		padding-top: 5px
 
-		span 
+		span
 			color: #72727E
 			font-size: 14px
 			line-height: 14px
 
-		p 
+		p
 			font-weight: 700
 			font-size: 16px
 			line-height: 12px
@@ -489,31 +499,33 @@
 .generate_content_inner2
 	margin-left: 10px
 
-
-.generate 
+.generate
 	&_empty
+		background: #14141A
+		height: 100vh
+		overflow-y: scroll
 		.main__container
 			display: block
 			flex-direction: unset
 			justify-content: unset
 
-		h1 
+		h1
 			color: #FFFFFF
 			font-size: 24px
 			line-height: 29px
 
-		span 
+		span
 			color: #CECED9
 			font-size: 16px
 			line-height: 22px
 			max-width: 326px
 
-		background: #14141A 
-	&_empty_header 
+			background: #14141A
+	&_empty_header
 		display: flex
 		justify-content: space-between
 		padding-top: 25px
-
+		margin-bottom: 17px
 		button
 			background-color: #1F1F26
 			border: 1px solid #1F1F26
@@ -523,16 +535,16 @@
 				width: 12px
 				height: 12px
 
-			a 
+			a
 				color: #fff
-	&_empty_content 
+	&_empty_content
 		text-align: center
 		padding-top: 160px
 
-		h1 
+		h1
 			padding-top: 10px
 
-		span 
+		span
 			padding-top: 10px
 
 		button
@@ -542,79 +554,80 @@
 			border-radius: 5px
 			margin: 0 auto
 			margin-top: 10px
-			padding: 10px
+			padding: 10px 25px
 
-			img 
+			img
 				width: 20px
 				height: 20px
 				margin-top: -3px
 				margin-right: 5px
 
-			a 
+			a
 				color: #fff
 				margin-top: 3px
 
-.generate 
-	&_comments 
+.generate
+	&_comments
 		display: flex
+		align-items: flex-start
 		padding-top: 25px
-	&_comments_mycomment 
+	&_comments_mycomment
 		width: 30%
 		background: #1F1F26
 		border-radius: 10px
 		margin-right: 10px
-		height: 368px
-	&_comments_mycomment_inner 
+	&_comments_mycomment_inner
 		text-align: center
 		padding: 18px 20px
-	&_comments_mycomment_heading 
+	&_comments_mycomment_heading
 		color: #fff
 		font-size: 20px
 		line-height: 24px
-	&_comments_mycomment_rating 
+	&_comments_mycomment_rating
 		padding-top: 16px
-	&_comments_mycomment_que 
+	&_comments_mycomment_que
 		color: #F5F5F7
 		font-size: 16px
 		line-height: 22px
 		padding-top: 16px
-	&_comments_mycomment_input 
+	&_comments_mycomment_input
 		width: 100%
 		height: 120px
 		margin-top: 16px
 		background: #14141A
 		border: none
-	&_comments_mycomment_btn 
+	&_comments_mycomment_btn
 		align-items: center
 		text-align: center
 
-		a 
+		a
 			color: #fff
 			font-size: 16px
-			line-height: 12px
-			vertical-align: middle !important 
+			width: 100%
+			display: flex
+			align-items: center
+			justify-content: center
+			border: 1px solid #FF7733
+			background: #FF7733
+			border-radius: 5px
+			height: 40px
+			margin-top: 16px
 
-		border: 1px solid #FF7733
-		background: #FF7733
-		border-radius: 5px
-		height: 40px
-		margin-top: 16px
-
-	&_comments_pastcomments 
+	&_comments_pastcomments
 		width: 70%
 		margin-left: 10px
 
-		img 
+		img
 			width: 40px
 			height: 40px
 			margin-top: 7px
-	&_comments_pastcomments_comment 
-	&_comments_pastcomments_heading 
-	&_comments_pastcomments_name 
+	&_comments_pastcomments_comment
+	&_comments_pastcomments_heading
+	&_comments_pastcomments_name
 
 		padding-left: 10px
 
-		h1 
+		h1
 			color: #F5F5F7
 			font-size: 16px
 
@@ -622,7 +635,7 @@
 			font-size: 12px
 			color: #A3A3B1
 
-	&_comments_pastcomments_text 
+	&_comments_pastcomments_text
 		font-size: 16px
 		line-height: 22px
 		color: #F5F5F7
@@ -631,7 +644,7 @@
 		border-radius: 5px
 		padding: 10px
 		margin-top: 10px
-	&_comments_pastcomments_answer 
+	&_comments_pastcomments_answer
 		margin-left: 50px
 
 .generate_stuff:last-child
@@ -644,8 +657,49 @@
 	.generate_header
 		display: block
 
+	.generate_header_nav
+		margin: 0 20px
+		display: flex
+		h1
+			order: 1
+			font-size: 27px
+			margin-right: auto
+
+		.generate_header_back
+			div:first-child
+				display: none
+		div
+			order: 2
+			padding-top: 3px
+
 	.generate_header_budget
-		margin-left: 20px
+		width: 92%
+		margin: 0 4%
+		margin-top: 10px
+
+		.inline-block
+			width: 90%
+			p
+				padding-top: 5px
+
+		.inline-block.nobg
+			background: none
+			height: 52px
+
+	.generate_header_budget
+		&:nth-child(2)
+			margin-top: 16px
+
+	.generate_header_budget.hide_for_dt
+		height: 52px
+
+	.generate_header_btn
+		width: 92%
+		margin: 0 4%
+		margin-top: 10px
+
+	.generate_content
+		padding: 0
 
 	.generate_content.grid
 		display: block
@@ -654,7 +708,7 @@
 		margin-left: 0
 		margin: 20px 20px 0 20px
 
-	.generate_content_inner 
+	.generate_content_inner
 		margin-right: 0
 		margin: 20px 20px 0 20px
 
@@ -668,32 +722,32 @@
 	.generate_empty_header
 		padding: 40px 20px 0 20px
 
-	.generate_ticket_heading 
-		display: block 
+	.generate_ticket_heading
+		display: block
 
-		img 
+		img
 			display: none
 
 	.generate_ticket_name
 		display: flex
 		padding-left: 0
-		img 
+		img
 			display: block
 
-		.block 
+		.block
 			padding-left: 20px
 
 	.ticket_weight
 		display: flex
 		padding-left: 0
 
-		span 
+		span
 			order: 2
 
-		img 
+		img
 			order: 1
 
-		.flex 
+		.flex
 			padding: 0
 
 	.ticket_weight .flex:first-child
@@ -702,11 +756,11 @@
 	.ticket_weight .flex:last-child
 		padding-left: 25px
 
-	.generate_hotel_inner>img 
+	.generate_hotel_inner>img
 		width: 100%
 		padding-right: 5px
 
-	.generate_hotel_stuff 
+	.generate_hotel_stuff
 		display: flex
 		justify-content: space-between
 		flex-wrap: wrap
@@ -721,4 +775,30 @@
 				width: 50%
 
 	.generate_add
-		height: 180px
+		height: 193px
+
+	.generate_comments
+		display: block
+		margin: 0 20px
+
+		&_mycomment
+			width: 100%
+
+		&_pastcomments
+			margin-top: 30px
+			width: 95%
+
+	.generate_empty_content
+		padding-top: 100px
+
+	.generate_header_budget .inline-block .flex
+		height: 52px
+
+	.generate_hotel_heading
+		padding-left: 0
+
+	.generate_hotel_rating
+		padding-left: 0
+
+	.generate_hotel_stuff
+		padding-left: 0
