@@ -1,7 +1,6 @@
 
 @import 'fonts'
 @import 'libs'
-@import 'media'
 @import 'vars'
 @import 'profile'
 @import 'course'
@@ -56,22 +55,94 @@ h1,h2,h3,h4,h5,h6
         border-bottom: 2px solid $green !important
 
 main
+    .sliders
+        &_wrapper
+            height: 460px 
+            &_inner
+                width: 70%
+                padding: 0 60px
+                height: 100%
+                @include flex(left,center)   
+                &>div
+                    &>h4
+                        margin-top: 20px
+                    &>button
+                        @include btn(16px 24px)
+                        margin-top: 60px
+    .speakers
+        padding-bottom: 10%
+        padding-top: 5%
+        &>h2
+            margin-bottom: 50px
+        &_wrapper
+            @include flex
+            &_content
+                position: relative
+                height: 380px
+                background-position: center
+                background-size: cover
+                width: 255px
+                &_inner
+                    position: absolute
+                    left: 50%
+                    bottom: 23px
+                    transform: translateX(-50%)
+                    text-align: center
+                    bottom: -40px
+                    width: 100%
+                    &>h2
+                        margin-bottom: 12px
+                    .text
+                        width: 100%
+                        position: relative
+                        @include flex(center,center)
+                        height: 37px
+                        &>span
+                            width: 50%
+                            display: inline-block
+                            color: #C2F1DC
+                        &:before
+                            @include lines(linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(37,176,114,1) 100%, rgba(0,212,255,1) 100%))
+                            left: 0
+                        &:after
+                            @include lines(linear-gradient(-90deg, rgba(2,0,36,1) 0%, rgba(37,176,114,1) 100%, rgba(0,212,255,1) 100%))
+                            right: 0
+                    .inactiveText
+                        &>span
+                            color: white
+                        &:before
+                            @include lines(linear-gradient(to right top, #040404, #3d3d3d, #787878, #b9b9b9, #ffffff)) 
+                        &:after
+                           @include lines(linear-gradient(to left top, #040404, #3d3d3d, #787878, #b9b9b9, #ffffff)) 
+                    &>button
+                        display: block
+                        width: 100%
+                        margin-top: 30px
+                        padding: 14px 0
+                        background-color: $green
+                        border: none
+                        border-radius: 6px
+                    .invisible
+                        visibility: hidden
     section.blocks
-        @include flex
+        @include flex(space-between,unset)
         flex-wrap: wrap
+        margin-top: 5%
         &>div
             background-color: #16171C
             width: 49%
             margin: 10px 0
-            height: 140px
             @include flex
             padding: 20px
             border-radius: 6px
             &>div
+                &>img
+                    width: 60px
+                    height: 60px
                 &:last-child
                     width: 85%
                 &:first-child
-                    width: 10%
+                    width: 15%
                 &>h3
                     color: $green
                     font-size: 24px
@@ -111,11 +182,7 @@ header
 
                 &_btn
                     button
-                        padding: 7px 16px
-                        background-color: $green
-                        border: none
-                        @include flex
-                        border-radius: 6px
+                        @include btn
                         &>img
                             width: 20px
                             margin-left: 10px
@@ -158,3 +225,5 @@ footer
                     height: 36px
             &_right
                 @include flex
+
+@import 'media'

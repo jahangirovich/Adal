@@ -1,5 +1,5 @@
 let gulp = require('gulp'),
-  sass = require('gulp-sass')(require('sass')),
+  sass = require('gulp-sass'),
   browserSync = require('browser-sync'),
   uglify = require('gulp-uglify'),
   concat = require('gulp-concat'),
