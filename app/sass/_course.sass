@@ -60,3 +60,163 @@
       letter-spacing: -0.02em
       margin-bottom: 0
       line-height: 32px
+  &__second
+    .preview
+      @include flex(space-between, flex-start)
+      &__video
+        border-radius: 10px
+        overflow: hidden
+        width: calc(60% - 20px)
+        height: 345px
+        position: relative
+        img
+          width: 100%
+          height: 100%
+      &__time
+        position: absolute
+        z-index: 5
+        right: 24px
+        bottom: 24px
+        background: $darkerBg
+        border-radius: 5px
+        font-size: 18px
+        font-family: 'font-md'
+        padding: 10px 18px
+      &__descr
+        width: 40%
+        height: 345px
+        border-radius: 10px
+        overflow: hidden
+        background: $darkerBg
+        padding: 24px
+      &__trailer
+        color: $green
+        letter-spacing: -0.02em
+        font-size: 28px
+        text-transform: uppercase
+        font-family: 'font-bold'
+        margin-bottom: 30px
+      &__title
+        letter-spacing: -0.02em
+        font-size: 24px
+        color: $white
+        font-family: 'font-md' !important
+        margin-bottom: 30px
+        span
+          display: block
+          width: 100%
+          overflow: hidden
+          display: -webkit-box
+          -webkit-line-clamp: 1
+          -webkit-box-orient: vertical
+      &__subtitle
+        color: $darkGrey
+        font-size: 20px
+        overflow: hidden
+        display: -webkit-box
+        -webkit-line-clamp: 6
+        -webkit-box-orient: vertical
+  &__item
+    width: 100%
+    background: $darkerBg
+    margin-top: 30px
+    border-radius: 10px
+    padding: 40px
+  &__item-wrap
+    @include flex(space-between, center)
+  &__item-title
+    font-size: 30px
+    font-family: 'font-md'
+    width: calc(80% - 46px)
+    overflow: hidden
+    display: -webkit-box
+    -webkit-line-clamp: 1
+    -webkit-box-orient: vertical
+    span
+      margin-right: 30px
+  &__item-arrow
+    width: 26px
+    img
+      cursor: pointer
+      width: 26px
+      height: 26px
+  &__item-content
+    .lesson
+      padding-top: 40px
+      padding-bottom: 15px
+      @include flex(space-between, flex-start)
+      &__video
+        width: calc(70% - 30px)
+        position: relative
+        border-radius: 10px
+        overflow: hidden
+        height: 376px
+        img
+          width: 100%
+          height: 100%
+          object-fit: cover
+          object-position: center
+      &__time
+        position: absolute
+        z-index: 5
+        right: 24px
+        bottom: 24px
+        background: $darkerBg
+        border-radius: 5px
+        font-size: 18px
+        font-family: 'font-md'
+        padding: 10px 18px
+      &__descr
+        width: 30%
+        height: 376px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+      &__title
+        font-size: 20px
+        line-height: 26px
+        overflow: hidden
+        display: -webkit-box
+        -webkit-line-clamp: 9
+        -webkit-box-orient: vertical
+      &__bottom
+        .button
+          font-size: 20px
+          width: 100%
+          padding-left: 5px
+          padding-right: 5px
+          display: flex
+          align-items: center
+          justify-content: center
+          img
+            width: 20px
+            height: 20px
+            margin-right: 10px
+      &__icons
+        margin-bottom: 30px
+        display: flex
+        align-items: center
+        svg
+          cursor: pointer
+          path, circle
+            transition: 0.2s
+        .download
+          margin-right: 10px
+        .favourite
+          margin-right: 15px
+        .download, .favourite
+          &:hover
+            svg
+              circle
+                stroke: $green
+              path
+                stroke: $green
+        .viewed
+          color: $darkGrey
+          font-size: 16px
+          display: flex
+          align-items: center
+          img
+            width: 20px
+            height: 20px
+            margin-right: 5px
