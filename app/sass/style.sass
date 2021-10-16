@@ -37,10 +37,23 @@ h1,h2,h3,h4,h5,h6
     background: $green
     border-radius: 7px
     border: none
-    font-size: 22px
+    font-size: 24px
     text-align: center
     padding: 14px 24px
     cursor: pointer
+
+.tabs
+    @include flex(center,center)
+    margin-bottom: 50px
+    .tab
+        cursor: pointer
+        color: $darkGrey
+        font-size: 30px
+        padding: 0 30px 12px
+        border-bottom: 2px solid $darkGrey
+    .active
+        color: $white !important
+        border-bottom: 2px solid $green !important
 
 main
     section.blocks
