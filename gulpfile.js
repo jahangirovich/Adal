@@ -1,6 +1,6 @@
 let gulp = require('gulp'),
-  sass = require('gulp-sass'),
-  browserSync = require('browser-sync'),
+  sass = require('gulp-sass')(require('sass'));
+browserSync = require('browser-sync'),
   uglify = require('gulp-uglify'),
   concat = require('gulp-concat'),
   rename = require('gulp-rename'),
