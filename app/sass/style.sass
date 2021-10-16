@@ -81,12 +81,17 @@ main
             margin-bottom: 50px
         &_wrapper
             @include flex
+            
             &_content
                 position: relative
                 height: 380px
                 background-position: center
                 background-size: cover
                 width: 255px
+                .locked
+                    position: absolute
+                    right: 25px
+                    top: 25px
                 &_inner
                     position: absolute
                     left: 50%
