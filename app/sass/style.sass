@@ -3,6 +3,8 @@
 @import 'libs'
 @import 'media'
 @import 'vars'
+@import 'profile'
+@import 'course'
 
 // GLOBAL
 .hide_for_dt
@@ -31,7 +33,43 @@ a
 h1,h2,h3,h4,h5,h6
     margin: 0
 
+.button
+    background: $green
+    border-radius: 7px
+    border: none
+    font-size: 24px
+    text-align: center
+    padding: 14px 24px
+    cursor: pointer
+
+.tabs
+    @include flex(center,center)
+    margin-bottom: 50px
+    .tab
+        cursor: pointer
+        color: $darkGrey
+        font-size: 30px
+        padding: 0 30px 12px
+        border-bottom: 2px solid $darkGrey
+    .active
+        color: $white !important
+        border-bottom: 2px solid $green !important
+
 main
+    .sliders
+        &_wrapper
+            height: 460px 
+            &_inner
+                width: 70%
+                padding: 0 60px
+                height: 100%
+                @include flex(left,center)   
+                &>div
+                    &>h4
+                        margin-top: 20px
+                    &>button
+                        @include btn(16px 24px)
+                        margin-top: 60px
     .speakers
         padding-bottom: 10%
         padding-top: 5%
@@ -42,6 +80,8 @@ main
             &_content
                 position: relative
                 height: 380px
+                background-position: center
+                background-size: cover
                 width: 255px
                 &_inner
                     position: absolute
@@ -52,7 +92,7 @@ main
                     bottom: -40px
                     width: 100%
                     &>h2
-                        height: 100px
+                        margin-bottom: 12px
                     .text
                         width: 100%
                         position: relative
@@ -63,14 +103,18 @@ main
                             display: inline-block
                             color: #C2F1DC
                         &:before
-                            @include lines
+                            @include lines(linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(37,176,114,1) 100%, rgba(0,212,255,1) 100%))
                             left: 0
                         &:after
-                            @include lines(linear-gradient(-90deg, rgba(2,0,36,1) 0%, rgba(37,176,114,1) 35%, rgba(0,212,255,1) 100%))
+                            @include lines(linear-gradient(-90deg, rgba(2,0,36,1) 0%, rgba(37,176,114,1) 100%, rgba(0,212,255,1) 100%))
                             right: 0
                     .inactiveText
+                        &>span
+                            color: white
+                        &:before
+                            @include lines(linear-gradient(to right top, #040404, #3d3d3d, #787878, #b9b9b9, #ffffff)) 
                         &:after
-                           @include lines() 
+                           @include lines(linear-gradient(to left top, #040404, #3d3d3d, #787878, #b9b9b9, #ffffff)) 
                     &>button
                         display: block
                         width: 100%
@@ -82,21 +126,24 @@ main
                     .invisible
                         visibility: hidden
     section.blocks
-        @include flex
+        @include flex(space-between,unset)
         flex-wrap: wrap
+        margin-top: 5%
         &>div
             background-color: #16171C
             width: 49%
             margin: 10px 0
-            height: 140px 
             @include flex
-            padding: 20px 
+            padding: 20px
             border-radius: 6px
             &>div
+                &>img
+                    width: 60px
+                    height: 60px
                 &:last-child
                     width: 85%
                 &:first-child
-                    width: 10%
+                    width: 15%
                 &>h3
                     color: $green
                     font-size: 24px
@@ -133,18 +180,14 @@ header
                             border-radius: 100%
                             width: 27px
                             height: 27px
-                            
+
                 &_btn
                     button
-                        padding: 7px 16px
-                        background-color: $green
-                        border: none
-                        @include flex
-                        border-radius: 6px
+                        @include btn
                         &>img
                             width: 20px
                             margin-left: 10px
-                            
+
                 &>div
                     width: 20%
                     text-align: center
@@ -164,7 +207,7 @@ footer
                     font-size: 18px
                     &>span
                         margin-left: 5px
-                    
+
             &>nav
                 width: 40%
                 @include flex(space-between,left)

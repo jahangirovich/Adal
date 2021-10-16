@@ -18,10 +18,13 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^5.0.0",
     "gulp-uglify": "^3.0.2",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "sass": "^1.43.2"
   },
   "dependencies": {
     "bootstrap": "^5.0.2",
+    "node-sass": "^6.0.1",
+    "rebuild": "^0.1.2",
     "slick-carousel": "^1.8.1"
   }
 }

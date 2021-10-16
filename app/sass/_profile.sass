@@ -1,0 +1,113 @@
+.profile
+  padding-bottom: 185px
+  &__user
+    @include flex(space-between)
+    padding: 40px 60px
+    background: linear-gradient(270deg, rgba(22, 23, 28, 0.3) 21.97%, #16171C 98.43%)
+    border-radius: 10px
+  &__user-content
+    @include flex
+  &__user-img
+    margin-right: 50px
+    img
+      width: 140px
+      height: 140px
+      border-radius: 100%
+      object-fit: cover
+      object-position: center
+  &__user-descr
+    p
+      margin-bottom: 15px
+      font-size: 32px
+      font-family: 'font-md'
+      color: $white
+      max-width: 400px
+    span
+      color: $darkGrey
+      font-size: 24px
+  &__user-edit
+    cursor: pointer
+    margin-bottom: 40px
+    img
+      width: 24px
+      height: 24px
+      margin-right: 10px
+    span
+      border-bottom: 1px solid $green
+      color: $green
+      font-size: 20px
+  &__items
+    .open
+      background: $darkerBg !important
+  &__item
+    border-radius: 10px
+    margin-top: 20px
+    padding: 40px 60px
+    background: linear-gradient(270deg, rgba(22, 23, 28, 0.3) 21.97%, #16171C 98.43%)
+  &__item-wrap
+    @include flex(space-between)
+  &__item-content
+    padding-top: 40px
+  &__item-name
+    color: $white
+    font-size: 32px
+    font-family: 'font-md'
+    img
+      width: 32px
+      height: 32px
+      margin-right: 20px
+  &__item-close
+    img
+      cursor: pointer
+      width: 26px
+      height: 26px
+  &__cards
+    display: flex
+    flex-wrap: wrap
+  &__card
+    background: $cardBg
+    border-radius: 5px
+    padding: 20px
+    margin-bottom: 2%
+    width: 32%
+    margin-right: 2%
+    &:nth-child(3n+3)
+      margin-right: 0
+  &__card-wrap
+    cursor: pointer
+    display: flex
+    justify-content: space-between
+  &__card-video
+    position: relative
+    border-radius: 5px
+    width: 40%
+    height: 60px
+    overflow: hidden
+    img
+      height: 60px
+      object-fit: cover
+      object-position: center
+  &__card-time
+    position: absolute
+    right: 0
+    bottom: 0
+    z-index: 5
+    background: $black
+    border-radius: 5px
+    font-size: 11px
+    padding: 4px 7px
+  &__card-name
+    width: calc(60% - 11px)
+    font-size: 18px
+    overflow: hidden
+    display: -webkit-box
+    -webkit-line-clamp: 3
+    -webkit-box-orient: vertical
+  &__card-descr
+    margin-top: 20px
+    color: $darkGrey
+    font-size: 16px
+    overflow: hidden
+    display: -webkit-box
+    -webkit-line-clamp: 4
+    -webkit-box-orient: vertical

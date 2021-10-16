@@ -1,0 +1,62 @@
+.author
+  height: 840px
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center center
+  width: 100%
+  border-radius: 20px 20px 0 0
+  .container
+    height: 100%
+  &__inner
+    color: $white
+    height: 100%
+    @include flex(flex-end,center)
+    flex-direction: column
+    padding-bottom: 90px
+  &__name
+    margin-bottom: 25px
+    font-size: 40px
+  &__title
+    font-size: 28px
+    font-family: 'font-md'
+  &__descr
+    display: flex
+    margin: 40px 0
+    font-size: 20px
+    div
+      display: flex
+      align-items: center
+      &:first-child
+        margin-right: 16px
+      &:last-child
+        margin-left: 16px
+    img
+      width: 24px
+      height: 24px
+      margin-right: 10px
+
+.about
+  &__inner
+    padding-top: 80px
+    padding-bottom: 90px
+  &__first
+    padding-bottom: 90px
+    div
+      @include flex(space-between, flex-start)
+      & + div
+        margin-top: 90px
+      &:last-child
+        p
+          text-align: right
+    img
+      border-radius: 10px
+      overflow: hidden
+      width: 43%
+      object-fit: cover
+      object-position: center
+    p
+      width: 45%
+      font-size: 22px
+      letter-spacing: -0.02em
+      margin-bottom: 0
+      line-height: 32px
