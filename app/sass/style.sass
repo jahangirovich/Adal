@@ -13,6 +13,7 @@ html
     scroll-behavior: smooth
 
 body
+    background-color: $black
     margin: 0
 
 *,*::before,*::after
@@ -20,7 +21,8 @@ body
 
 *
     outline: none !important
-    font-family: 'Raleway', sans-serif
+    font-family: 'font'
+    color: white
 
 a
     text-decoration: none !important
@@ -29,96 +31,106 @@ a
 h1,h2,h3,h4,h5,h6
     margin: 0
 
-header
-    padding: 20px 0px 
-    border-bottom: 1px solid #B7B7B7
-    .inner
-        display: flex
-        align-items: center
-        justify-content: space-between
-        &>nav
-            width: 35%
-            display: flex
-            justify-content: space-around
-            &>a
-                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-                color: black
-        &_contents
-            width: 42%
-            display: flex
-            align-items: center
-            justify-content: space-around
-            &>button
-                background-color: #B41C1B
-                color: white
-                border: none
-                border-radius: 25px
-                padding: 8px 20px
-            &_search
-                position: relative
-                &>input
-                    border: none
-                    background-color: #EEEEEE
-                    padding: 8px 20px
-                    border-radius: 25px
-                    color: #777777
-                    font-size: 14px
-                &>img
-                    position: absolute
-                    right: 10px
-                    top: 50%
-                    transform: translateY(-50%)
-            &_login
-                display: flex
-                align-items: center
-                &>div
-                    padding: 8px 10px
-                    border: 1px solid #B7B7B7
-                    border-radius: 25px
-                &>span
-                    margin-left: 10px
-
 main
+    section.blocks
+        @include flex
+        flex-wrap: wrap
+        &>div
+            background-color: #16171C
+            width: 49%
+            margin: 10px 0
+            height: 140px 
+            @include flex
+            padding: 20px 
+            border-radius: 6px
+            &>div
+                &:last-child
+                    width: 85%
+                &:first-child
+                    width: 10%
+                &>h3
+                    color: $green
+                    font-size: 24px
+                &>p
+                    margin-top: 20px
+                    font-size: 20px
+header
     padding: 30px 0
-    .breadcump
-        margin-bottom: 20px
-    .books
-        &_inner
-            &_search
-                margin: 30px 0
-                display: flex
-            &_choose
-                display: flex
-                align-items: center
-                justify-content: space-between
-                &>div
-                    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05)
-                    border-radius: 28px
-                    text-align: center
-                    overflow: hidden
+    .container
+        .inner
+            @include flex
+            &_left
+                width: 22%
+                @include flex
+                &>img
                     &:first-child
-                        background-color: #EEEBF2
-                    &:nth-child(2)
-                        background-color: #EBF0F2
+                        width: 36px
                     &:last-child
-                        background-color: #F1F2EB
-                    &>h4
-                        margin-top: 50px
-                        margin-bottom: 20px
-                    .images
-                        img
-                            position: relative
-                            width: 130px
-                            bottom: 0
-                            &:last-child
-                                left: 0
-                                z-index: 1
-                            &:nth-child(2)
-                                left: 30px
-                                bottom: -20px
-                                z-index: 2
-                            &:first-child
-                                left: 60px
-                                z-index: 3
-                                bottom: -40px
-                                
+                        width: 160px
+                        height: 48px
+            &_right
+                width: 52%
+                @include flex
+                &>nav
+                    width: 60%
+                    @include flex(space-around)
+                    &>a
+                        color: white
+                        font-size: 20px
+                &_langs
+                    cursor: pointer
+                    &>img
+                        &:first-child
+                            border-radius: 100%
+                            width: 27px
+                            height: 27px
+                            
+                &_btn
+                    button
+                        padding: 7px 16px
+                        background-color: $green
+                        border: none
+                        @include flex
+                        border-radius: 6px
+                        &>img
+                            width: 20px
+                            margin-left: 10px
+                            
+                &>div
+                    width: 20%
+                    text-align: center
+footer
+    background-color: #2E2C2C
+    padding: 100px 0
+    .footer
+        &_center
+            margin: 80px 0
+            @include flex
+            &>div
+                text-align: right
+                .active
+                    color: $green
+                &>div
+                    margin-top: 10px
+                    font-size: 18px
+                    &>span
+                        margin-left: 5px
+                    
+            &>nav
+                width: 40%
+                @include flex(space-between,left)
+                &>div
+                    &>a
+                        display: block
+                        margin: 20px 0
+                        font-size: 18px
+                        text-decoration: underline !important
+                        color: white
+        &_bottom
+            @include flex
+            &_left
+                &>img
+                    width: 36px
+                    height: 36px
+            &_right
+                @include flex
