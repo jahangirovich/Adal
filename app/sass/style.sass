@@ -32,6 +32,55 @@ h1,h2,h3,h4,h5,h6
     margin: 0
 
 main
+    .speakers
+        padding-bottom: 10%
+        padding-top: 5%
+        &>h2
+            margin-bottom: 50px
+        &_wrapper
+            @include flex
+            &_content
+                position: relative
+                height: 380px
+                width: 255px
+                &_inner
+                    position: absolute
+                    left: 50%
+                    bottom: 23px
+                    transform: translateX(-50%)
+                    text-align: center
+                    bottom: -40px
+                    width: 100%
+                    &>h2
+                        height: 100px
+                    .text
+                        width: 100%
+                        position: relative
+                        @include flex(center,center)
+                        height: 37px
+                        &>span
+                            width: 50%
+                            display: inline-block
+                            color: #C2F1DC
+                        &:before
+                            @include lines
+                            left: 0
+                        &:after
+                            @include lines(linear-gradient(-90deg, rgba(2,0,36,1) 0%, rgba(37,176,114,1) 35%, rgba(0,212,255,1) 100%))
+                            right: 0
+                    .inactiveText
+                        &:after
+                           @include lines() 
+                    &>button
+                        display: block
+                        width: 100%
+                        margin-top: 30px
+                        padding: 14px 0
+                        background-color: $green
+                        border: none
+                        border-radius: 6px
+                    .invisible
+                        visibility: hidden
     section.blocks
         @include flex
         flex-wrap: wrap

@@ -12,3 +12,12 @@ $greyText: #42424E
     display: flex
     align-items: $align
     justify-content: $space
+@mixin lines($color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(37,176,114,1) 35%, rgba(0,212,255,1) 100%))
+    content: ""
+    width: 25%
+    background: $color
+    height: 1px
+    top: 50%
+    transform: translateY(-50%)
+    display: block
+    position: absolute
